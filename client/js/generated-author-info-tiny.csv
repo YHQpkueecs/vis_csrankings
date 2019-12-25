@@ -1,0 +1,774 @@
+"name","dept","area","count","adjustedcount","year"
+A Min Tjoa,TU Wien,icde,1.0,0.3333333333333333,1984
+A Min Tjoa,TU Wien,icde,1.0,0.2,1996
+A. Aldo Faisal,Imperial College London,icra,1.0,0.3333333333333333,2016
+A. Aldo Faisal,Imperial College London,icra,1.0,0.3333333333333333,2019
+A. Aldo Faisal,Imperial College London,nips,1.0,0.14285714285714285,2018
+A. Aldo Faisal,Imperial College London,ubicomp,1.0,0.16666666666666666,2019
+A. Cüneyd Tantug,Istanbul Technical University,acl,1.0,0.3333333333333333,2007
+A. Cüneyd Tantug,Istanbul Technical University,acl,1.0,0.3333333333333333,2019
+A. E. Eiben,VU Amsterdam,ijcai,1.0,0.5,2007
+A. Ercument Cicek,Bilkent University,ismb,1.0,0.3333333333333333,2014
+A. Jefferson Offutt,George Mason University,fse,1.0,0.16666666666666666,2016
+A. Jefferson Offutt,George Mason University,icse,1.0,0.3333333333333333,1993
+A. Jefferson Offutt,George Mason University,issta,1.0,0.3333333333333333,1993
+A. Jefferson Offutt,George Mason University,issta,1.0,0.5,1996
+A. Jefferson Offutt,George Mason University,pldi,1.0,0.5,1987
+A. P. Wim Böhm,Colorado State University,ics,1.0,0.5,1987
+A. P. Wim Böhm,Colorado State University,isca,1.0,0.3333333333333333,1992
+A. P. Wim Böhm,Colorado State University,micro,1.0,0.3333333333333333,1991
+A. P. Wim Böhm,Colorado State University,micro,1.0,0.25,1993
+A. Pavan 0001,Iowa State University,icde,1.0,0.5,2005
+A. Pavan 0001,Iowa State University,pods,1.0,0.25,2012
+A. Pavan 0001,Iowa State University,vldb,1.0,0.25,2013
+A. Prasad Sistla,University of Illinois at Chicago,acl,1.0,0.2,2012
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.25,1990
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.5,1991
+A. Prasad Sistla,University of Illinois at Chicago,cav,2.0,0.8333333333333333,1993
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.5,1994
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.5,1995
+A. Prasad Sistla,University of Illinois at Chicago,cav,2.0,1.5,1997
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.25,1998
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.5,2001
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.3333333333333333,2011
+A. Prasad Sistla,University of Illinois at Chicago,cav,1.0,0.25,2018
+A. Prasad Sistla,University of Illinois at Chicago,focs,1.0,0.3333333333333333,1983
+A. Prasad Sistla,University of Illinois at Chicago,icde,2.0,0.5833333333333333,1997
+A. Prasad Sistla,University of Illinois at Chicago,icde,1.0,0.25,1998
+A. Prasad Sistla,University of Illinois at Chicago,lics,2.0,1.0,1987
+A. Prasad Sistla,University of Illinois at Chicago,lics,1.0,0.3333333333333333,2008
+A. Prasad Sistla,University of Illinois at Chicago,lics,1.0,0.5,2016
+A. Prasad Sistla,University of Illinois at Chicago,lics,1.0,0.3333333333333333,2017
+A. Prasad Sistla,University of Illinois at Chicago,popl,1.0,0.3333333333333333,1983
+A. Prasad Sistla,University of Illinois at Chicago,sigmod,1.0,0.3333333333333333,1994
+A. Prasad Sistla,University of Illinois at Chicago,sigmod,1.0,0.5,1995
+A. Prasad Sistla,University of Illinois at Chicago,stoc,1.0,0.5,1982
+A. Prasad Sistla,University of Illinois at Chicago,stoc,1.0,0.5,1984
+A. Prasad Sistla,University of Illinois at Chicago,vldb,1.0,0.3333333333333333,1994
+A. Prasad Sistla,University of Illinois at Chicago,vldb,1.0,0.25,1995
+A. Prasad Sistla,University of Illinois at Chicago,vldb,1.0,0.2,2009
+A. Robert Calderbank,Duke University,cvpr,1.0,0.16666666666666666,2018
+A. Robert Calderbank,Duke University,hpca,1.0,0.3333333333333333,2013
+A. Robert Calderbank,Duke University,iccv,1.0,0.25,2015
+A. Robert Calderbank,Duke University,icml,1.0,0.2,2012
+A. Robert Calderbank,Duke University,icml,1.0,0.2,2014
+A. Robert Calderbank,Duke University,icml,1.0,0.25,2018
+A. Robert Calderbank,Duke University,naacl,1.0,0.25,2019
+A. Robert Calderbank,Duke University,nips,1.0,0.16666666666666666,2013
+A. Robert Calderbank,Duke University,nips,1.0,0.25,2015
+A. Robert Calderbank,Duke University,soda,1.0,0.2,2005
+A. T. Chamillard,Univ. of Colorado Colorado Springs,issta,1.0,0.5,1996
+A. Taylan Cemgil,Boğaziçi University,cvpr,1.0,0.3333333333333333,2005
+A. Taylan Cemgil,Boğaziçi University,icml,1.0,0.3333333333333333,2013
+A. Taylan Cemgil,Boğaziçi University,icml,1.0,0.25,2016
+A. Taylan Cemgil,Boğaziçi University,icml,1.0,0.2,2018
+A. Taylan Cemgil,Boğaziçi University,icra,1.0,0.16666666666666666,2018
+A. Taylan Cemgil,Boğaziçi University,nips,1.0,0.5,2001
+A. Taylan Cemgil,Boğaziçi University,nips,1.0,0.3333333333333333,2011
+A. Taylan Cemgil,Boğaziçi University,nips,1.0,0.5,2013
+A. Udaya Shankar,University of Maryland - College Park,mobisys,1.0,0.2,2006
+A. Udaya Shankar,University of Maryland - College Park,oakland,1.0,0.3333333333333333,1991
+A. Udaya Shankar,University of Maryland - College Park,rtss,1.0,1.0,1992
+A. Udaya Shankar,University of Maryland - College Park,sigcomm,1.0,0.5,1988
+A. Udaya Shankar,University of Maryland - College Park,sigmetrics,1.0,0.25,1992
+A. Udaya Shankar,University of Maryland - College Park,sigmetrics,1.0,0.5,1995
+A. W. Roscoe,University of Oxford,cav,1.0,0.14285714285714285,2012
+A. W. Roscoe,University of Oxford,oakland,1.0,1.0,1995
+Aaditeshwar Seth,IIT Delhi,mobicom,1.0,0.2,2006
+Aanjhan Ranganathan,Northeastern University,mobicom,3.0,0.7,2016
+Aanjhan Ranganathan,Northeastern University,oakland,1.0,0.25,2013
+Aanjhan Ranganathan,Northeastern University,oakland,1.0,0.3333333333333333,2019
+Aanjhan Ranganathan,Northeastern University,usenixsec,1.0,0.16666666666666666,2015
+Aanjhan Ranganathan,Northeastern University,usenixsec,1.0,0.25,2019
+Aarne Ranta,Chalmers University of Technology,icfp,1.0,0.5,2004
+Aarne Ranta,Chalmers University of Technology,icfp,1.0,0.5,2006
+Aaron Bernstein,Rutgers University,focs,1.0,1.0,2009
+Aaron Bernstein,Rutgers University,soda,1.0,0.5,2008
+Aaron Bernstein,Rutgers University,soda,1.0,1.0,2010
+Aaron Bernstein,Rutgers University,soda,1.0,0.5,2011
+Aaron Bernstein,Rutgers University,soda,1.0,1.0,2012
+Aaron Bernstein,Rutgers University,soda,1.0,0.5,2016
+Aaron Bernstein,Rutgers University,soda,1.0,0.5,2017
+Aaron Bernstein,Rutgers University,soda,2.0,0.8333333333333333,2018
+Aaron Bernstein,Rutgers University,soda,2.0,0.5333333333333333,2019
+Aaron Bernstein,Rutgers University,stoc,1.0,0.5,2009
+Aaron Bernstein,Rutgers University,stoc,1.0,1.0,2013
+Aaron Bernstein,Rutgers University,stoc,1.0,0.5,2016
+Aaron Bernstein,Rutgers University,stoc,2.0,0.8333333333333333,2019
+Aaron C. Courville,University of Montreal,aaai,1.0,0.25,2014
+Aaron C. Courville,University of Montreal,aaai,1.0,0.2,2016
+Aaron C. Courville,University of Montreal,aaai,2.0,0.2857142857142857,2017
+Aaron C. Courville,University of Montreal,aaai,1.0,0.2,2018
+Aaron C. Courville,University of Montreal,acl,1.0,0.14285714285714285,2016
+Aaron C. Courville,University of Montreal,acl,1.0,0.16666666666666666,2018
+Aaron C. Courville,University of Montreal,cvpr,2.0,0.3666666666666667,2017
+Aaron C. Courville,University of Montreal,eccv,1.0,0.2,2012
+Aaron C. Courville,University of Montreal,eccv,1.0,0.125,2018
+Aaron C. Courville,University of Montreal,emnlp,1.0,0.25,2017
+Aaron C. Courville,University of Montreal,iccv,1.0,0.14285714285714285,2015
+Aaron C. Courville,University of Montreal,icml,1.0,0.2,2007
+Aaron C. Courville,University of Montreal,icml,1.0,0.3333333333333333,2011
+Aaron C. Courville,University of Montreal,icml,1.0,0.3333333333333333,2012
+Aaron C. Courville,University of Montreal,icml,1.0,0.2,2013
+Aaron C. Courville,University of Montreal,icml,1.0,0.125,2015
+Aaron C. Courville,University of Montreal,icml,2.0,0.3666666666666667,2016
+Aaron C. Courville,University of Montreal,icml,1.0,0.09090909090909091,2017
+Aaron C. Courville,University of Montreal,icml,3.0,0.5928571428571429,2018
+Aaron C. Courville,University of Montreal,icml,2.0,0.325,2019
+Aaron C. Courville,University of Montreal,ijcai,1.0,0.16666666666666666,2017
+Aaron C. Courville,University of Montreal,nips,1.0,0.5,2001
+Aaron C. Courville,University of Montreal,nips,1.0,0.3333333333333333,2002
+Aaron C. Courville,University of Montreal,nips,1.0,0.25,2003
+Aaron C. Courville,University of Montreal,nips,1.0,0.3333333333333333,2004
+Aaron C. Courville,University of Montreal,nips,1.0,0.5,2007
+Aaron C. Courville,University of Montreal,nips,1.0,0.3333333333333333,2009
+Aaron C. Courville,University of Montreal,nips,1.0,0.3333333333333333,2011
+Aaron C. Courville,University of Montreal,nips,1.0,0.25,2013
+Aaron C. Courville,University of Montreal,nips,1.0,0.125,2014
+Aaron C. Courville,University of Montreal,nips,1.0,0.16666666666666666,2015
+Aaron C. Courville,University of Montreal,nips,1.0,0.16666666666666666,2016
+Aaron C. Courville,University of Montreal,nips,3.0,0.5333333333333333,2017
+Aaron C. Courville,University of Montreal,nips,2.0,0.41666666666666663,2018
+Aaron C. Courville,University of Montreal,rss,1.0,0.3333333333333333,2005
+Aaron Clauset,University of Colorado Boulder,aaai,1.0,0.5,2015
+Aaron Clauset,University of Colorado Boulder,stoc,1.0,0.25,2005
+Aaron Clauset,University of Colorado Boulder,ubicomp,1.0,0.3333333333333333,2009
+Aaron Clauset,University of Colorado Boulder,www,1.0,0.3333333333333333,2016
+Aaron F. Bobick,Washington University in St. Louis,aaai,1.0,0.5,1999
+Aaron F. Bobick,Washington University in St. Louis,chiconf,1.0,0.3333333333333333,1997
+Aaron F. Bobick,Washington University in St. Louis,chiconf,1.0,0.2,1999
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.5,1989
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.5,1991
+Aaron F. Bobick,Washington University in St. Louis,cvpr,4.0,1.6666666666666665,1997
+Aaron F. Bobick,Washington University in St. Louis,cvpr,3.0,1.5,1998
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.3333333333333333,2000
+Aaron F. Bobick,Washington University in St. Louis,cvpr,3.0,1.3333333333333333,2001
+Aaron F. Bobick,Washington University in St. Louis,cvpr,3.0,1.0333333333333332,2004
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.16666666666666666,2005
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.3333333333333333,2006
+Aaron F. Bobick,Washington University in St. Louis,cvpr,1.0,0.5,2014
+Aaron F. Bobick,Washington University in St. Louis,eccv,1.0,0.5,1994
+Aaron F. Bobick,Washington University in St. Louis,iccv,2.0,1.0,1995
+Aaron F. Bobick,Washington University in St. Louis,iccv,1.0,0.5,1998
+Aaron F. Bobick,Washington University in St. Louis,iccv,1.0,0.5,1999
+Aaron F. Bobick,Washington University in St. Louis,iccv,1.0,0.25,2007
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.5,1989
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.2,2006
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.3333333333333333,2013
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.25,2014
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.5,2015
+Aaron F. Bobick,Washington University in St. Louis,icra,1.0,0.25,2016
+Aaron F. Bobick,Washington University in St. Louis,iros,1.0,0.25,2009
+Aaron F. Bobick,Washington University in St. Louis,iros,2.0,0.47619047619047616,2012
+Aaron F. Bobick,Washington University in St. Louis,siggraph,1.0,0.2,2003
+Aaron F. Bobick,Washington University in St. Louis,siggraph,1.0,0.25,2005
+Aaron Harwood,University of Melbourne,ijcai,1.0,0.2,2017
+Aaron J. Elmore,University of Chicago,icde,1.0,0.16666666666666666,2019
+Aaron J. Elmore,University of Chicago,icml,1.0,0.2,2019
+Aaron J. Elmore,University of Chicago,micro,1.0,0.25,2017
+Aaron J. Elmore,University of Chicago,sigmod,1.0,0.25,2011
+Aaron J. Elmore,University of Chicago,sigmod,1.0,0.16666666666666666,2013
+Aaron J. Elmore,University of Chicago,sigmod,1.0,0.16666666666666666,2015
+Aaron J. Elmore,University of Chicago,sigmod,1.0,0.3333333333333333,2018
+Aaron J. Elmore,University of Chicago,usenixatc,1.0,0.5,2018
+Aaron J. Elmore,University of Chicago,vldb,1.0,0.2,2012
+Aaron J. Elmore,University of Chicago,vldb,1.0,0.125,2014
+Aaron J. Elmore,University of Chicago,vldb,2.0,0.3333333333333333,2016
+Aaron J. Elmore,University of Chicago,vldb,1.0,0.2,2017
+Aaron J. Elmore,University of Chicago,vldb,2.0,0.3666666666666667,2019
+Aaron Potechin,University of Chicago,focs,1.0,1.0,2010
+Aaron Potechin,University of Chicago,focs,1.0,0.16666666666666666,2016
+Aaron Potechin,University of Chicago,focs,1.0,0.16666666666666666,2017
+Aaron Potechin,University of Chicago,soda,1.0,0.2,2016
+Aaron Potechin,University of Chicago,stoc,1.0,0.5,2012
+Aaron Potechin,University of Chicago,stoc,1.0,0.3333333333333333,2015
+Aaron Potechin,University of Chicago,stoc,1.0,1.0,2019
+Aaron Quigley,University of St Andrews,chiconf,1.0,0.2,2017
+Aaron Quigley,University of St Andrews,chiconf,2.0,0.4242424242424242,2018
+Aaron Quigley,University of St Andrews,chiconf,1.0,0.2,2019
+Aaron Quigley,University of St Andrews,ubicomp,1.0,0.2,2018
+Aaron Quigley,University of St Andrews,uist,1.0,0.2,2016
+Aaron Quigley,University of St Andrews,uist,1.0,0.2,2019
+Aaron Roth 0001,University of Pennsylvania,aaai,1.0,0.2,2015
+Aaron Roth 0001,University of Pennsylvania,ec,1.0,0.3333333333333333,2010
+Aaron Roth 0001,University of Pennsylvania,ec,1.0,0.5,2011
+Aaron Roth 0001,University of Pennsylvania,ec,1.0,0.5,2012
+Aaron Roth 0001,University of Pennsylvania,ec,3.0,1.25,2014
+Aaron Roth 0001,University of Pennsylvania,ec,2.0,0.5,2015
+Aaron Roth 0001,University of Pennsylvania,ec,2.0,0.39285714285714285,2017
+Aaron Roth 0001,University of Pennsylvania,ec,1.0,0.2,2018
+Aaron Roth 0001,University of Pennsylvania,focs,1.0,0.25,2016
+Aaron Roth 0001,University of Pennsylvania,icfp,1.0,0.25,2017
+Aaron Roth 0001,University of Pennsylvania,icfp,1.0,0.2,2019
+Aaron Roth 0001,University of Pennsylvania,icml,1.0,0.2,2014
+Aaron Roth 0001,University of Pennsylvania,icml,2.0,0.5333333333333333,2017
+Aaron Roth 0001,University of Pennsylvania,icml,2.0,0.75,2018
+Aaron Roth 0001,University of Pennsylvania,icml,1.0,0.14285714285714285,2019
+Aaron Roth 0001,University of Pennsylvania,ijcai,1.0,0.3333333333333333,2016
+Aaron Roth 0001,University of Pennsylvania,nips,1.0,0.16666666666666666,2015
+Aaron Roth 0001,University of Pennsylvania,nips,3.0,0.75,2016
+Aaron Roth 0001,University of Pennsylvania,nips,1.0,0.2,2017
+Aaron Roth 0001,University of Pennsylvania,nips,3.0,0.7,2018
+Aaron Roth 0001,University of Pennsylvania,popl,1.0,0.16666666666666666,2015
+Aaron Roth 0001,University of Pennsylvania,soda,2.0,0.45,2010
+Aaron Roth 0001,University of Pennsylvania,soda,2.0,0.8333333333333333,2014
+Aaron Roth 0001,University of Pennsylvania,soda,1.0,0.25,2015
+Aaron Roth 0001,University of Pennsylvania,soda,1.0,0.25,2016
+Aaron Roth 0001,University of Pennsylvania,stoc,2.0,0.5833333333333333,2008
+Aaron Roth 0001,University of Pennsylvania,stoc,1.0,0.5,2010
+Aaron Roth 0001,University of Pennsylvania,stoc,1.0,0.25,2011
+Aaron Roth 0001,University of Pennsylvania,stoc,1.0,0.5,2012
+Aaron Roth 0001,University of Pennsylvania,stoc,2.0,0.8333333333333333,2013
+Aaron Roth 0001,University of Pennsylvania,stoc,1.0,0.2,2014
+Aaron Roth 0001,University of Pennsylvania,stoc,1.0,0.16666666666666666,2015
+Aaron Roth 0001,University of Pennsylvania,stoc,2.0,0.5333333333333333,2016
+Aaron Roth 0001,University of Pennsylvania,wine,1.0,1.0,2008
+Aaron Roth 0001,University of Pennsylvania,wine,1.0,0.25,2010
+Aaron Roth 0001,University of Pennsylvania,wine,2.0,1.0,2012
+Aaron Roth 0001,University of Pennsylvania,wine,1.0,0.25,2015
+Aaron Roth 0001,University of Pennsylvania,wine,1.0,0.16666666666666666,2016
+Aaron Schulman,University of California - San Diego,ccs,1.0,0.3333333333333333,2014
+Aaron Schulman,University of California - San Diego,imc,1.0,0.5,2011
+Aaron Schulman,University of California - San Diego,imc,1.0,0.14285714285714285,2014
+Aaron Schulman,University of California - San Diego,imc,2.0,0.3611111111111111,2015
+Aaron Schulman,University of California - San Diego,imc,1.0,0.1111111111111111,2019
+Aaron Schulman,University of California - San Diego,mobicom,1.0,0.125,2010
+Aaron Schulman,University of California - San Diego,mobicom,1.0,0.14285714285714285,2019
+Aaron Schulman,University of California - San Diego,mobisys,1.0,0.14285714285714285,2019
+Aaron Schulman,University of California - San Diego,nsdi,1.0,0.1111111111111111,2010
+Aaron Schulman,University of California - San Diego,nsdi,1.0,0.3333333333333333,2015
+Aaron Schulman,University of California - San Diego,nsdi,1.0,0.2,2019
+Aaron Schulman,University of California - San Diego,sigcomm,1.0,0.25,2019
+Aaron Schulman,University of California - San Diego,usenixsec,1.0,0.2,2015
+Aaron Schulman,University of California - San Diego,usenixsec,1.0,0.25,2019
+Aaron Sidford,Stanford University,focs,1.0,0.5,2013
+Aaron Sidford,Stanford University,focs,2.0,0.7,2014
+Aaron Sidford,Stanford University,focs,2.0,0.8333333333333333,2015
+Aaron Sidford,Stanford University,focs,1.0,0.16666666666666666,2016
+Aaron Sidford,Stanford University,focs,1.0,0.25,2017
+Aaron Sidford,Stanford University,focs,2.0,0.6428571428571428,2018
+Aaron Sidford,Stanford University,icml,1.0,0.25,2015
+Aaron Sidford,Stanford University,icml,3.0,0.5928571428571429,2016
+Aaron Sidford,Stanford University,icml,1.0,0.25,2017
+Aaron Sidford,Stanford University,nips,2.0,0.7,2018
+Aaron Sidford,Stanford University,soda,1.0,0.25,2014
+Aaron Sidford,Stanford University,soda,4.0,1.2833333333333332,2018
+Aaron Sidford,Stanford University,soda,1.0,0.25,2019
+Aaron Sidford,Stanford University,stoc,1.0,0.25,2013
+Aaron Sidford,Stanford University,stoc,2.0,0.45,2016
+Aaron Sidford,Stanford University,stoc,2.0,0.39285714285714285,2017
+Aaron Sidford,Stanford University,stoc,2.0,0.6666666666666666,2019
+Aaron Striegel,University of Notre Dame,hpdc,1.0,0.2,2005
+Aaron Striegel,University of Notre Dame,imc,1.0,0.25,2015
+Aaron Striegel,University of Notre Dame,mobicom,1.0,0.5,2013
+Aaron Striegel,University of Notre Dame,sc,1.0,0.16666666666666666,2005
+Aaron Striegel,University of Notre Dame,ubicomp,1.0,0.034482758620689655,2019
+Aaron Stump,University of Iowa,cav,1.0,0.3333333333333333,2002
+Aaron Stump,University of Iowa,icfp,1.0,0.3333333333333333,2005
+Aaron Stump,University of Iowa,icfp,1.0,0.3333333333333333,2018
+Aaron Stump,University of Iowa,lics,1.0,0.25,2001
+Aarti Gupta,Princeton University,ase,1.0,0.125,2011
+Aarti Gupta,Princeton University,cav,1.0,0.5,1993
+Aarti Gupta,Princeton University,cav,1.0,0.3333333333333333,2004
+Aarti Gupta,Princeton University,cav,3.0,0.75,2005
+Aarti Gupta,Princeton University,cav,2.0,0.5333333333333333,2006
+Aarti Gupta,Princeton University,cav,2.0,0.5,2007
+Aarti Gupta,Princeton University,cav,1.0,0.3333333333333333,2009
+Aarti Gupta,Princeton University,cav,3.0,0.8666666666666667,2018
+Aarti Gupta,Princeton University,cav,1.0,0.25,2019
+Aarti Gupta,Princeton University,dac,1.0,0.3333333333333333,1997
+Aarti Gupta,Princeton University,dac,1.0,0.25,2001
+Aarti Gupta,Princeton University,dac,1.0,0.2,2003
+Aarti Gupta,Princeton University,dac,1.0,0.3333333333333333,2005
+Aarti Gupta,Princeton University,dac,1.0,0.3333333333333333,2006
+Aarti Gupta,Princeton University,dac,1.0,0.5,2008
+Aarti Gupta,Princeton University,dac,1.0,0.2,2018
+Aarti Gupta,Princeton University,emsoft,1.0,0.25,2009
+Aarti Gupta,Princeton University,eurosys,1.0,0.07692307692307693,2019
+Aarti Gupta,Princeton University,fse,1.0,0.25,2008
+Aarti Gupta,Princeton University,fse,1.0,0.25,2009
+Aarti Gupta,Princeton University,fse,1.0,0.3333333333333333,2012
+Aarti Gupta,Princeton University,fse,1.0,0.2,2015
+Aarti Gupta,Princeton University,fse,1.0,0.3333333333333333,2016
+Aarti Gupta,Princeton University,iccad,1.0,0.5,1993
+Aarti Gupta,Princeton University,iccad,1.0,0.3333333333333333,1996
+Aarti Gupta,Princeton University,iccad,1.0,0.2,2001
+Aarti Gupta,Princeton University,iccad,1.0,0.25,2003
+Aarti Gupta,Princeton University,iccad,1.0,0.3333333333333333,2004
+Aarti Gupta,Princeton University,iccad,1.0,0.5,2006
+Aarti Gupta,Princeton University,iccad,1.0,0.3333333333333333,2007
+Aarti Gupta,Princeton University,iccad,1.0,0.25,2018
+Aarti Gupta,Princeton University,icse,1.0,0.3333333333333333,2008
+Aarti Gupta,Princeton University,icse,1.0,0.3333333333333333,2011
+Aarti Gupta,Princeton University,icse,1.0,0.2,2013
+Aarti Gupta,Princeton University,ijcai,1.0,0.5,2007
+Aarti Gupta,Princeton University,issta,1.0,0.25,2008
+Aarti Gupta,Princeton University,issta,1.0,0.16666666666666666,2014
+Aarti Gupta,Princeton University,lics,1.0,0.5,2006
+Aarti Gupta,Princeton University,micro,1.0,0.25,2018
+Aarti Gupta,Princeton University,popl,1.0,0.5,2007
+Aarti Gupta,Princeton University,popl,1.0,0.25,2010
+Aarti Gupta,Princeton University,rtss,1.0,0.25,2009
+Aarti Gupta,Princeton University,sigcomm,1.0,0.25,2017
+Aarti Gupta,Princeton University,sigcomm,1.0,0.25,2018
+Aarti Singh,Carnegie Mellon University,aaai,1.0,0.2,2015
+Aarti Singh,Carnegie Mellon University,aaai,1.0,0.5,2016
+Aarti Singh,Carnegie Mellon University,icml,1.0,0.25,2012
+Aarti Singh,Carnegie Mellon University,icml,1.0,0.5,2013
+Aarti Singh,Carnegie Mellon University,icml,1.0,0.3333333333333333,2015
+Aarti Singh,Carnegie Mellon University,icml,2.0,0.5833333333333333,2017
+Aarti Singh,Carnegie Mellon University,icml,2.0,0.4,2018
+Aarti Singh,Carnegie Mellon University,nips,1.0,0.3333333333333333,2008
+Aarti Singh,Carnegie Mellon University,nips,1.0,0.5,2010
+Aarti Singh,Carnegie Mellon University,nips,2.0,0.5,2011
+Aarti Singh,Carnegie Mellon University,nips,4.0,1.3666666666666665,2013
+Aarti Singh,Carnegie Mellon University,nips,1.0,0.3333333333333333,2015
+Aarti Singh,Carnegie Mellon University,nips,1.0,0.25,2016
+Aarti Singh,Carnegie Mellon University,nips,4.0,0.95,2017
+Aarti Singh,Carnegie Mellon University,nips,2.0,0.5,2018
+Aasa Feragen,University of Copenhagen,cvpr,1.0,0.3333333333333333,2014
+Aasa Feragen,University of Copenhagen,cvpr,1.0,0.3333333333333333,2015
+Aasa Feragen,University of Copenhagen,cvpr,1.0,0.5,2018
+Aasa Feragen,University of Copenhagen,iccv,1.0,0.25,2011
+Aasa Feragen,University of Copenhagen,nips,1.0,0.2,2013
+Aasa Feragen,University of Copenhagen,nips,1.0,0.5,2017
+Aasheesh Kolli,Pennsylvania State University,asplos,2.0,0.5333333333333333,2016
+Aasheesh Kolli,Pennsylvania State University,asplos,1.0,0.2,2019
+Aasheesh Kolli,Pennsylvania State University,fast,1.0,0.14285714285714285,2019
+Aasheesh Kolli,Pennsylvania State University,hpca,1.0,0.25,2018
+Aasheesh Kolli,Pennsylvania State University,isca,1.0,0.14285714285714285,2017
+Aasheesh Kolli,Pennsylvania State University,isca,1.0,0.2,2019
+Aasheesh Kolli,Pennsylvania State University,micro,1.0,0.3333333333333333,2013
+Aasheesh Kolli,Pennsylvania State University,micro,2.0,0.325,2016
+Aasheesh Kolli,Pennsylvania State University,sosp,1.0,0.16666666666666666,2019
+Abbas Edalat,Imperial College London,icfp,1.0,0.3333333333333333,1998
+Abbas Edalat,Imperial College London,lics,1.0,1.0,1994
+Abbas Edalat,Imperial College London,lics,1.0,1.0,1995
+Abbas Edalat,Imperial College London,lics,2.0,1.5,1996
+Abbas Edalat,Imperial College London,lics,2.0,0.5833333333333333,1997
+Abbas Edalat,Imperial College London,lics,1.0,0.3333333333333333,1998
+Abbas Edalat,Imperial College London,lics,1.0,0.5,2002
+Abbas Edalat,Imperial College London,lics,1.0,0.5,2005
+Abbas Edalat,Imperial College London,lics,1.0,1.0,2007
+Abbas Edalat,Imperial College London,lics,1.0,1.0,2008
+Abbas Edalat,Imperial College London,lics,1.0,0.5,2014
+Abbas Edalat,Imperial College London,lics,1.0,1.0,2015
+Abbas Edalat,Imperial College London,lics,1.0,0.5,2017
+Abbas Edalat,Imperial College London,lics,1.0,0.3333333333333333,2019
+Abbas Edalat,Imperial College London,nips,1.0,1.0,2013
+Abdallah Saffidine,UNSW,aaai,1.0,0.3333333333333333,2012
+Abdallah Saffidine,UNSW,aaai,1.0,0.3333333333333333,2014
+Abdallah Saffidine,UNSW,aaai,1.0,0.25,2016
+Abdallah Saffidine,UNSW,aaai,2.0,0.5833333333333333,2018
+Abdallah Saffidine,UNSW,ijcai,1.0,0.3333333333333333,2011
+Abdallah Saffidine,UNSW,ijcai,2.0,0.5333333333333333,2013
+Abdallah Saffidine,UNSW,ijcai,1.0,0.3333333333333333,2017
+Abdallah Saffidine,UNSW,ijcai,1.0,0.3333333333333333,2018
+AbdelRahman Abdou,Carleton University,usenixsec,1.0,0.25,2019
+Abdelhakim Hafid,University of Montreal,hpdc,1.0,0.3333333333333333,1996
+Abdelsalam Helal,University of Florida,icde,1.0,0.5,1988
+Abdelsalam Helal,University of Florida,icde,1.0,0.3333333333333333,1989
+Abdelsalam Helal,University of Florida,sigmod,1.0,0.0625,1997
+Abdeslam Boularias,Rutgers University,aaai,2.0,0.5,2011
+Abdeslam Boularias,Rutgers University,aaai,1.0,0.3333333333333333,2014
+Abdeslam Boularias,Rutgers University,aaai,2.0,0.4242424242424242,2015
+Abdeslam Boularias,Rutgers University,icml,1.0,0.5,2009
+Abdeslam Boularias,Rutgers University,icra,1.0,0.5,2010
+Abdeslam Boularias,Rutgers University,icra,1.0,0.25,2015
+Abdeslam Boularias,Rutgers University,icra,1.0,0.3333333333333333,2018
+Abdeslam Boularias,Rutgers University,icra,2.0,0.375,2019
+Abdeslam Boularias,Rutgers University,ijcai,1.0,0.25,2018
+Abdeslam Boularias,Rutgers University,iros,1.0,0.3333333333333333,2011
+Abdeslam Boularias,Rutgers University,iros,1.0,0.3333333333333333,2017
+Abdeslam Boularias,Rutgers University,iros,1.0,0.25,2018
+Abdeslam Boularias,Rutgers University,nips,1.0,0.5,2010
+Abdeslam Boularias,Rutgers University,nips,2.0,0.8333333333333333,2012
+Abdol-Hossein Esfahanian,Michigan State University,kdd,1.0,0.3333333333333333,2009
+Abdou Youssef,George Washington University,isca,1.0,0.5,1990
+Abdou Youssef,George Washington University,sigir,1.0,0.125,2016
+Abdul Serwadda,Texas Tech University,ccs,1.0,0.5,2013
+Abdul Serwadda,Texas Tech University,ccs,1.0,0.25,2014
+Abdullah Mueen,University of New Mexico,kdd,1.0,0.5,2010
+Abdullah Mueen,University of New Mexico,kdd,1.0,0.3333333333333333,2011
+Abdullah Mueen,University of New Mexico,kdd,1.0,0.125,2012
+Abdullah Mueen,University of New Mexico,kdd,1.0,0.3333333333333333,2019
+Abdullah Mueen,University of New Mexico,pets,1.0,0.25,2015
+Abdullah Mueen,University of New Mexico,sigmod,1.0,0.3333333333333333,2010
+Abdullah Mueen,University of New Mexico,www,1.0,0.2,2015
+Abdullah Mueen,University of New Mexico,www,1.0,0.5,2019
+Abdullah Muzahid,Texas A&M University,eurosys,1.0,0.25,2017
+Abdullah Muzahid,Texas A&M University,hpca,1.0,0.2,2012
+Abdullah Muzahid,Texas A&M University,hpca,1.0,0.25,2014
+Abdullah Muzahid,Texas A&M University,isca,1.0,0.25,2009
+Abdullah Muzahid,Texas A&M University,isca,1.0,0.3333333333333333,2013
+Abdullah Muzahid,Texas A&M University,isca,1.0,0.5,2016
+Abdullah Muzahid,Texas A&M University,micro,1.0,0.3333333333333333,2010
+Abdullah Muzahid,Texas A&M University,micro,1.0,0.3333333333333333,2012
+Abdullah Uz Tansel,CUNY,icde,1.0,1.0,1987
+Abdullah Uz Tansel,CUNY,sigmod,1.0,0.5,1985
+Abdullah Uz Tansel,CUNY,sigmod,1.0,0.5,1989
+Abdulmotaleb El-Saddik,University of Ottawa,iros,1.0,0.25,2013
+Abdulmotaleb El-Saddik,University of Ottawa,iros,1.0,0.3333333333333333,2014
+Abhi Shelat,Northeastern University,aaai,1.0,0.5,2004
+Abhi Shelat,Northeastern University,ccs,1.0,0.5,2013
+Abhi Shelat,Northeastern University,ccs,1.0,0.2,2014
+Abhi Shelat,Northeastern University,ccs,1.0,0.5,2015
+Abhi Shelat,Northeastern University,ccs,1.0,0.3333333333333333,2016
+Abhi Shelat,Northeastern University,ccs,2.0,0.6428571428571428,2017
+Abhi Shelat,Northeastern University,ccs,1.0,0.3333333333333333,2018
+Abhi Shelat,Northeastern University,ccs,1.0,0.3333333333333333,2019
+Abhi Shelat,Northeastern University,crypto,1.0,0.5,2005
+Abhi Shelat,Northeastern University,crypto,1.0,0.3333333333333333,2006
+Abhi Shelat,Northeastern University,crypto,1.0,0.3333333333333333,2008
+Abhi Shelat,Northeastern University,crypto,1.0,0.16666666666666666,2009
+Abhi Shelat,Northeastern University,crypto,1.0,0.3333333333333333,2019
+Abhi Shelat,Northeastern University,eurocrypt,1.0,0.3333333333333333,2007
+Abhi Shelat,Northeastern University,eurocrypt,1.0,0.5,2011
+Abhi Shelat,Northeastern University,eurocrypt,1.0,0.3333333333333333,2017
+Abhi Shelat,Northeastern University,focs,1.0,0.3333333333333333,2007
+Abhi Shelat,Northeastern University,focs,1.0,0.5,2009
+Abhi Shelat,Northeastern University,oakland,1.0,0.25,2014
+Abhi Shelat,Northeastern University,oakland,1.0,0.2,2016
+Abhi Shelat,Northeastern University,oakland,2.0,0.45,2018
+Abhi Shelat,Northeastern University,oakland,2.0,0.45,2019
+Abhi Shelat,Northeastern University,soda,1.0,0.5,2002
+Abhi Shelat,Northeastern University,soda,1.0,0.3333333333333333,2003
+Abhi Shelat,Northeastern University,stoc,1.0,0.125,2002
+Abhi Shelat,Northeastern University,stoc,1.0,0.3333333333333333,2005
+Abhi Shelat,Northeastern University,usenixsec,1.0,0.3333333333333333,2012
+Abhi Shelat,Northeastern University,usenixsec,1.0,0.25,2013
+Abhi Shelat,Northeastern University,usenixsec,1.0,0.25,2016
+Abhi Shelat,Northeastern University,wine,1.0,0.3333333333333333,2017
+Abhijeet Ghosh,Imperial College London,cvpr,1.0,0.3333333333333333,2017
+Abhijeet Ghosh,Imperial College London,eccv,1.0,0.25,2016
+Abhijeet Ghosh,Imperial College London,iccv,1.0,0.25,2007
+Abhijeet Ghosh,Imperial College London,nips,1.0,0.3333333333333333,2007
+Abhijeet Ghosh,Imperial College London,siggraph,1.0,0.125,2004
+Abhijeet Ghosh,Imperial College London,siggraph,1.0,0.14285714285714285,2013
+Abhijeet Ghosh,Imperial College London,siggraph,1.0,0.14285714285714285,2015
+Abhijeet Ghosh,Imperial College London,siggraph-asia,1.0,0.2,2008
+Abhijeet Ghosh,Imperial College London,siggraph-asia,1.0,0.2,2010
+Abhijeet Ghosh,Imperial College London,siggraph-asia,1.0,0.16666666666666666,2011
+Abhijeet Ghosh,Imperial College London,siggraph-asia,1.0,0.25,2017
+Abhijeet Ghosh,Imperial College London,siggraph-asia,2.0,0.5333333333333333,2018
+Abhik Roychoudhury,National University of Singapore,ase,1.0,0.3333333333333333,2010
+Abhik Roychoudhury,National University of Singapore,ase,1.0,0.3333333333333333,2016
+Abhik Roychoudhury,National University of Singapore,ase,1.0,0.25,2018
+Abhik Roychoudhury,National University of Singapore,cav,1.0,0.5,2001
+Abhik Roychoudhury,National University of Singapore,ccs,1.0,0.3333333333333333,2016
+Abhik Roychoudhury,National University of Singapore,ccs,1.0,0.25,2017
+Abhik Roychoudhury,National University of Singapore,dac,1.0,0.3333333333333333,2003
+Abhik Roychoudhury,National University of Singapore,dac,1.0,0.25,2006
+Abhik Roychoudhury,National University of Singapore,dac,1.0,0.25,2009
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.3333333333333333,2007
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.25,2009
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.25,2010
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.3333333333333333,2011
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.3333333333333333,2012
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.3333333333333333,2013
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.25,2014
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.25,2016
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.2,2017
+Abhik Roychoudhury,National University of Singapore,fse,1.0,0.25,2018
+Abhik Roychoudhury,National University of Singapore,ics,1.0,0.25,2004
+Abhik Roychoudhury,National University of Singapore,icse,1.0,0.5,2002
+Abhik Roychoudhury,National University of Singapore,icse,1.0,0.5,2004
+Abhik Roychoudhury,National University of Singapore,icse,1.0,0.25,2006
+Abhik Roychoudhury,National University of Singapore,icse,1.0,0.25,2011
+Abhik Roychoudhury,National University of Singapore,icse,1.0,0.25,2012
+Abhik Roychoudhury,National University of Singapore,icse,2.0,0.5833333333333333,2013
+Abhik Roychoudhury,National University of Singapore,icse,3.0,1.0833333333333333,2015
+Abhik Roychoudhury,National University of Singapore,icse,2.0,0.5833333333333333,2016
+Abhik Roychoudhury,National University of Singapore,icse,2.0,0.45,2018
+Abhik Roychoudhury,National University of Singapore,issta,1.0,0.5,2007
+Abhik Roychoudhury,National University of Singapore,issta,1.0,0.25,2013
+Abhik Roychoudhury,National University of Singapore,issta,1.0,0.5,2014
+Abhik Roychoudhury,National University of Singapore,issta,1.0,0.3333333333333333,2019
+Abhik Roychoudhury,National University of Singapore,ndss,1.0,0.2,2019
+Abhik Roychoudhury,National University of Singapore,rtas,1.0,0.3333333333333333,2008
+Abhik Roychoudhury,National University of Singapore,rtas,1.0,0.3333333333333333,2011
+Abhik Roychoudhury,National University of Singapore,rtas,1.0,0.16666666666666666,2012
+Abhik Roychoudhury,National University of Singapore,rtas,1.0,0.3333333333333333,2013
+Abhik Roychoudhury,National University of Singapore,rtss,2.0,0.5833333333333333,2004
+Abhik Roychoudhury,National University of Singapore,rtss,1.0,0.25,2005
+Abhik Roychoudhury,National University of Singapore,rtss,2.0,0.7,2009
+Abhik Roychoudhury,National University of Singapore,rtss,2.0,0.7,2011
+Abhik Roychoudhury,National University of Singapore,rtss,2.0,0.5333333333333333,2013
+Abhinav Bhatele,University of Maryland - College Park,ics,1.0,0.3333333333333333,2009
+Abhinav Bhatele,University of Maryland - College Park,ics,1.0,0.1,2018
+Abhinav Bhatele,University of Maryland - College Park,ics,1.0,0.125,2019
+Abhinav Bhatele,University of Maryland - College Park,sc,2.0,0.5833333333333333,2011
+Abhinav Bhatele,University of Maryland - College Park,sc,2.0,0.22619047619047616,2012
+Abhinav Bhatele,University of Maryland - College Park,sc,2.0,0.45,2013
+Abhinav Bhatele,University of Maryland - College Park,sc,3.0,0.6761904761904762,2014
+Abhinav Bhatele,University of Maryland - College Park,sc,1.0,0.125,2015
+Abhinav Bhatele,University of Maryland - College Park,sc,3.0,0.525,2016
+Abhinav Bhatele,University of Maryland - College Park,sc,3.0,0.3222222222222222,2017
+Abhinav Bhatele,University of Maryland - College Park,sc,2.0,0.39285714285714285,2018
+Abhinav Bhatele,University of Maryland - College Park,sc,1.0,0.3333333333333333,2019
+Abhinav Bhatele,University of Maryland - College Park,vis,1.0,0.1111111111111111,2012
+Abhinav Bhatele,University of Maryland - College Park,vis,1.0,0.14285714285714285,2014
+Abhinav Dhall,IIT Ropar,iccv,1.0,0.3333333333333333,2013
+Abhinav Gupta 0001,Carnegie Mellon University,aaai,1.0,0.04,2015
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,1.0,0.5,2007
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,1.0,0.2,2008
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,1.0,0.25,2009
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,1.0,0.5,2010
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,2.0,0.5,2011
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,1.0,0.25,2013
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,2.0,0.6666666666666666,2014
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,2.0,0.5833333333333333,2015
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,5.0,1.583333333333333,2016
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,8.0,2.283333333333333,2017
+Abhinav Gupta 0001,Carnegie Mellon University,cvpr,5.0,1.2,2018
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,1.0,0.5,2008
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,2.0,0.6666666666666666,2010
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,4.0,0.9999999999999999,2012
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,2.0,0.6666666666666666,2014
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,8.0,2.45,2016
+Abhinav Gupta 0001,Carnegie Mellon University,eccv,3.0,1.0833333333333333,2018
+Abhinav Gupta 0001,Carnegie Mellon University,iccv,1.0,0.3333333333333333,2007
+Abhinav Gupta 0001,Carnegie Mellon University,iccv,1.0,0.3333333333333333,2011
+Abhinav Gupta 0001,Carnegie Mellon University,iccv,3.0,1.1666666666666665,2013
+Abhinav Gupta 0001,Carnegie Mellon University,iccv,5.0,1.9166666666666665,2015
+Abhinav Gupta 0001,Carnegie Mellon University,iccv,7.0,1.9916666666666665,2017
+Abhinav Gupta 0001,Carnegie Mellon University,icml,1.0,0.25,2012
+Abhinav Gupta 0001,Carnegie Mellon University,icml,1.0,0.25,2017
+Abhinav Gupta 0001,Carnegie Mellon University,icml,1.0,0.3333333333333333,2019
+Abhinav Gupta 0001,Carnegie Mellon University,icra,1.0,0.5,2016
+Abhinav Gupta 0001,Carnegie Mellon University,icra,3.0,0.976190476190476,2017
+Abhinav Gupta 0001,Carnegie Mellon University,icra,2.0,0.375,2018
+Abhinav Gupta 0001,Carnegie Mellon University,iros,1.0,0.3333333333333333,2017
+Abhinav Gupta 0001,Carnegie Mellon University,nips,1.0,0.3333333333333333,2008
+Abhinav Gupta 0001,Carnegie Mellon University,nips,1.0,0.25,2010
+Abhinav Gupta 0001,Carnegie Mellon University,nips,1.0,0.3333333333333333,2013
+Abhinav Gupta 0001,Carnegie Mellon University,nips,3.0,1.0833333333333333,2018
+Abhinav Gupta 0001,Carnegie Mellon University,siggraph,1.0,0.2,2012
+Abhinav Gupta 0001,Carnegie Mellon University,siggraph-asia,1.0,0.25,2011
+Abhinav Shrivastava,University of Maryland - College Park,cvpr,1.0,0.3333333333333333,2014
+Abhinav Shrivastava,University of Maryland - College Park,cvpr,1.0,0.3333333333333333,2015
+Abhinav Shrivastava,University of Maryland - College Park,cvpr,2.0,0.5833333333333333,2016
+Abhinav Shrivastava,University of Maryland - College Park,cvpr,1.0,0.3333333333333333,2017
+Abhinav Shrivastava,University of Maryland - College Park,cvpr,1.0,0.16666666666666666,2019
+Abhinav Shrivastava,University of Maryland - College Park,eccv,1.0,0.3333333333333333,2012
+Abhinav Shrivastava,University of Maryland - College Park,eccv,1.0,0.5,2016
+Abhinav Shrivastava,University of Maryland - College Park,eccv,2.0,0.3666666666666667,2018
+Abhinav Shrivastava,University of Maryland - College Park,iccv,2.0,0.8333333333333333,2013
+Abhinav Shrivastava,University of Maryland - College Park,iccv,1.0,0.25,2017
+Abhinav Shrivastava,University of Maryland - College Park,icml,1.0,0.25,2012
+Abhinav Shrivastava,University of Maryland - College Park,siggraph-asia,1.0,0.25,2011
+Abhiram G. Ranade,IIT Bombay,focs,1.0,1.0,1987
+Abhiram G. Ranade,IIT Bombay,focs,1.0,0.3333333333333333,1994
+Abhiram G. Ranade,IIT Bombay,isca,1.0,0.5,1992
+Abhiram G. Ranade,IIT Bombay,sc,1.0,0.3333333333333333,1991
+Abhiram G. Ranade,IIT Bombay,sc,2.0,1.0,1993
+Abhiram G. Ranade,IIT Bombay,soda,1.0,0.5,1999
+Abhiram G. Ranade,IIT Bombay,soda,1.0,0.5,2000
+Abhishek Bhattacharjee,Yale University,asplos,1.0,0.5,2010
+Abhishek Bhattacharjee,Yale University,asplos,1.0,0.3333333333333333,2014
+Abhishek Bhattacharjee,Yale University,asplos,1.0,0.25,2016
+Abhishek Bhattacharjee,Yale University,asplos,2.0,1.5,2017
+Abhishek Bhattacharjee,Yale University,asplos,1.0,0.125,2018
+Abhishek Bhattacharjee,Yale University,asplos,1.0,0.25,2019
+Abhishek Bhattacharjee,Yale University,hpca,1.0,0.25,2014
+Abhishek Bhattacharjee,Yale University,isca,1.0,0.5,2009
+Abhishek Bhattacharjee,Yale University,isca,1.0,0.25,2017
+Abhishek Bhattacharjee,Yale University,isca,3.0,0.6428571428571428,2018
+Abhishek Bhattacharjee,Yale University,isca,1.0,0.25,2019
+Abhishek Bhattacharjee,Yale University,micro,2.0,0.45,2012
+Abhishek Bhattacharjee,Yale University,micro,1.0,1.0,2013
+Abhishek Bhattacharjee,Yale University,micro,1.0,0.25,2015
+Abhishek Bhattacharjee,Yale University,micro,1.0,1.0,2017
+Abhishek Bhattacharjee,Yale University,micro,1.0,0.25,2018
+Abhishek Chandra,University of Minnesota,hpdc,1.0,0.25,2007
+Abhishek Chandra,University of Minnesota,hpdc,1.0,0.3333333333333333,2015
+Abhishek Chandra,University of Minnesota,hpdc,1.0,0.3333333333333333,2016
+Abhishek Chandra,University of Minnesota,osdi,1.0,0.25,2000
+Abhishek Chandra,University of Minnesota,sigmetrics,1.0,0.25,2019
+Abhishek Chandra,University of Minnesota,usenixatc,1.0,0.5,2001
+Abhishek Jain 0002,Johns Hopkins University,ccs,1.0,0.3333333333333333,2014
+Abhishek Jain 0002,Johns Hopkins University,ccs,1.0,0.2,2017
+Abhishek Jain 0002,Johns Hopkins University,crypto,1.0,0.3333333333333333,2010
+Abhishek Jain 0002,Johns Hopkins University,crypto,1.0,0.3333333333333333,2011
+Abhishek Jain 0002,Johns Hopkins University,crypto,1.0,0.2,2012
+Abhishek Jain 0002,Johns Hopkins University,crypto,3.0,0.7,2013
+Abhishek Jain 0002,Johns Hopkins University,crypto,1.0,0.3333333333333333,2014
+Abhishek Jain 0002,Johns Hopkins University,crypto,2.0,0.8333333333333333,2015
+Abhishek Jain 0002,Johns Hopkins University,crypto,3.0,0.9166666666666666,2017
+Abhishek Jain 0002,Johns Hopkins University,crypto,2.0,0.41666666666666663,2018
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,1.0,0.2,2011
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,2.0,0.41666666666666663,2012
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,1.0,0.5,2013
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,1.0,0.1111111111111111,2014
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,2.0,0.6666666666666666,2017
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,1.0,0.3333333333333333,2018
+Abhishek Jain 0002,Johns Hopkins University,eurocrypt,2.0,0.5833333333333333,2019
+Abhishek Jain 0002,Johns Hopkins University,stoc,1.0,0.5,2010
+Abhishek Jain 0002,Johns Hopkins University,stoc,1.0,0.25,2012
+Abhishek Jain 0002,Johns Hopkins University,stoc,1.0,0.25,2015
+Abhishek Sarkar,IIIT Hyderabad,iros,1.0,0.25,2017
+Abhradeep Thakurta,University of California - Santa Cruz,focs,1.0,0.3333333333333333,2014
+Abhradeep Thakurta,University of California - Santa Cruz,focs,1.0,0.25,2018
+Abhradeep Thakurta,University of California - Santa Cruz,icml,1.0,0.5,2013
+Abhradeep Thakurta,University of California - Santa Cruz,icml,1.0,0.5,2014
+Abhradeep Thakurta,University of California - Santa Cruz,icml,1.0,0.3333333333333333,2018
+Abhradeep Thakurta,University of California - Santa Cruz,kdd,1.0,0.25,2010
+Abhradeep Thakurta,University of California - Santa Cruz,nips,1.0,0.5,2013
+Abhradeep Thakurta,University of California - Santa Cruz,nips,1.0,0.3333333333333333,2015
+Abhradeep Thakurta,University of California - Santa Cruz,nips,1.0,0.25,2017
+Abhradeep Thakurta,University of California - Santa Cruz,nips,1.0,0.3333333333333333,2018
+Abhradeep Thakurta,University of California - Santa Cruz,oakland,1.0,0.3333333333333333,2017
+Abhradeep Thakurta,University of California - Santa Cruz,oakland,1.0,0.16666666666666666,2019
+Abhradeep Thakurta,University of California - Santa Cruz,sigmod,1.0,0.2,2012
+Abhradeep Thakurta,University of California - Santa Cruz,soda,1.0,0.16666666666666666,2019
+Abhradeep Thakurta,University of California - Santa Cruz,stoc,1.0,0.25,2014
+Abolfazl Asudeh,University of Illinois at Chicago,icde,1.0,0.3333333333333333,2019
+Abolfazl Asudeh,University of Illinois at Chicago,sigmod,1.0,0.25,2016
+Abolfazl Asudeh,University of Illinois at Chicago,sigmod,1.0,0.25,2017
+Abolfazl Asudeh,University of Illinois at Chicago,sigmod,2.0,0.45,2019
+Abolfazl Asudeh,University of Illinois at Chicago,vldb,2.0,0.5833333333333333,2016
+Abolfazl Asudeh,University of Illinois at Chicago,vldb,3.0,0.5928571428571429,2018
+Abolfazl Asudeh,University of Illinois at Chicago,vldb,1.0,0.25,2019
+Abolfazl Razi,Northern Arizona University,icml,1.0,0.2,2014
+Abraham Bernstein,University of Zurich,fse,1.0,0.14285714285714285,2009
+Abraham Bernstein,University of Zurich,fse,1.0,0.2,2010
+Abraham Bernstein,University of Zurich,ijcai,1.0,0.25,2016
+Abraham Bernstein,University of Zurich,vldb,1.0,0.3333333333333333,2008
+Abraham Bernstein,University of Zurich,www,1.0,0.2,2008
+Abraham Bernstein,University of Zurich,www,1.0,0.25,2015
+Abraham Bernstein,University of Zurich,www,1.0,0.25,2018
+Abraham Bernstein,University of Zurich,www,1.0,0.125,2019
+Abraham Silberschatz,Yale University,focs,1.0,0.5,1979
+Abraham Silberschatz,Yale University,icde,2.0,0.8333333333333333,1991
+Abraham Silberschatz,Yale University,icde,1.0,0.3333333333333333,1997
+Abraham Silberschatz,Yale University,icde,1.0,0.3333333333333333,1998
+Abraham Silberschatz,Yale University,icde,2.0,0.5333333333333333,1999
+Abraham Silberschatz,Yale University,kdd,1.0,0.5,1995
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1982
+Abraham Silberschatz,Yale University,pods,1.0,0.5,1984
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1987
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1988
+Abraham Silberschatz,Yale University,pods,1.0,0.5,1990
+Abraham Silberschatz,Yale University,pods,1.0,0.2,1992
+Abraham Silberschatz,Yale University,pods,2.0,0.5333333333333333,1993
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1995
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1996
+Abraham Silberschatz,Yale University,pods,1.0,0.3333333333333333,1997
+Abraham Silberschatz,Yale University,pods,1.0,0.25,1998
+Abraham Silberschatz,Yale University,pods,1.0,0.2,2013
+Abraham Silberschatz,Yale University,popl,1.0,0.5,1986
+Abraham Silberschatz,Yale University,sigcomm,1.0,0.25,2001
+Abraham Silberschatz,Yale University,sigcomm,1.0,0.2,2008
+Abraham Silberschatz,Yale University,sigmetrics,1.0,0.5,1996
+Abraham Silberschatz,Yale University,sigmod,1.0,0.3333333333333333,1981
+Abraham Silberschatz,Yale University,sigmod,2.0,1.0,1988
+Abraham Silberschatz,Yale University,sigmod,2.0,0.6666666666666666,1990
+Abraham Silberschatz,Yale University,sigmod,1.0,0.3333333333333333,1991
+Abraham Silberschatz,Yale University,sigmod,1.0,0.2,1992
+Abraham Silberschatz,Yale University,sigmod,3.0,1.0,1996
+Abraham Silberschatz,Yale University,sigmod,1.0,0.2,1999
+Abraham Silberschatz,Yale University,uist,1.0,0.3333333333333333,2012
+Abraham Silberschatz,Yale University,usenixatc,1.0,0.25,1998
+Abraham Silberschatz,Yale University,usenixatc,2.0,0.4,1999
+Abraham Silberschatz,Yale University,usenixatc,1.0,0.25,2000
+Abraham Silberschatz,Yale University,vldb,1.0,0.5,1980
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1981
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1982
+Abraham Silberschatz,Yale University,vldb,1.0,0.5,1983
+Abraham Silberschatz,Yale University,vldb,1.0,0.5,1985
+Abraham Silberschatz,Yale University,vldb,2.0,0.6666666666666666,1990
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1992
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1993
+Abraham Silberschatz,Yale University,vldb,2.0,0.45,1994
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1996
+Abraham Silberschatz,Yale University,vldb,3.0,0.7,1997
+Abraham Silberschatz,Yale University,vldb,1.0,0.3333333333333333,1998
+Abraham Silberschatz,Yale University,vldb,1.0,0.2,2009
+Abraham Silberschatz,Yale University,vldb,1.0,0.25,2019
+Abram Hindle,University of Alberta,fse,1.0,0.2,2011
+Abram Hindle,University of Alberta,icse,1.0,0.2,2012
+Abram Hindle,University of Alberta,icse,1.0,0.16666666666666666,2016
+Abram Hindle,University of Alberta,icse,1.0,0.16666666666666666,2019
+Abtin Rahimian,University of Colorado Boulder,sc,1.0,0.08333333333333333,2010
+Abtin Rahimian,University of Colorado Boulder,sc,1.0,0.2,2019
+Abtin Rahimian,University of Colorado Boulder,siggraph,1.0,0.3333333333333333,2017
+Abusayeed Saifullah,Wayne State University,rtas,1.0,0.25,2010
+Abusayeed Saifullah,Wayne State University,rtas,1.0,0.25,2011
+Abusayeed Saifullah,Wayne State University,rtas,1.0,0.14285714285714285,2012
+Abusayeed Saifullah,Wayne State University,rtas,2.0,0.5,2019
+Abusayeed Saifullah,Wayne State University,rtss,1.0,0.25,2010
+Abusayeed Saifullah,Wayne State University,rtss,1.0,0.25,2011
+Abusayeed Saifullah,Wayne State University,rtss,1.0,0.16666666666666666,2014
+Abusayeed Saifullah,Wayne State University,rtss,1.0,0.125,2015
+Abusayeed Saifullah,Wayne State University,sensys,1.0,0.16666666666666666,2016
+Abusayeed Saifullah,Wayne State University,sensys,1.0,0.16666666666666666,2017
+Achim Blumensath,Masaryk University,lics,1.0,0.5,2000
+Achim Blumensath,Masaryk University,lics,1.0,0.2,2014
+Achim Streit,Karlsruhe Institute of Technology (KIT),hpdc,1.0,0.5,2000
+Ada Gavrilovska,Georgia Institute of Technology,eurosys,1.0,0.3333333333333333,2016
+Ada Gavrilovska,Georgia Institute of Technology,eurosys,1.0,0.25,2019
+Ada Gavrilovska,Georgia Institute of Technology,hpca,1.0,0.3333333333333333,2014
+Ada Gavrilovska,Georgia Institute of Technology,hpdc,1.0,0.3333333333333333,2001
+Ada Gavrilovska,Georgia Institute of Technology,hpdc,1.0,0.25,2018
+Ada Gavrilovska,Georgia Institute of Technology,hpdc,1.0,0.2,2019
+Ada Gavrilovska,Georgia Institute of Technology,isca,1.0,0.25,2017
+Ada Gavrilovska,Georgia Institute of Technology,usenixatc,1.0,0.2,2018
+Ada Gavrilovska,Georgia Institute of Technology,vldb,1.0,0.25,2017
+Ada Wai-Chee Fu,Chinese University of Hong Kong,icde,1.0,0.5,1999
+Ada Wai-Chee Fu,Chinese University of Hong Kong,icde,1.0,0.25,2007
+Ada Wai-Chee Fu,Chinese University of Hong Kong,icde,1.0,0.25,2009
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.5,1995
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.3333333333333333,1999
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.1111111111111111,2005
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,2.0,0.41666666666666663,2006
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.25,2007
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.25,2008
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.25,2009
+Ada Wai-Chee Fu,Chinese University of Hong Kong,kdd,1.0,0.3333333333333333,2013
+Ada Wai-Chee Fu,Chinese University of Hong Kong,pods,1.0,0.5,1989
+Ada Wai-Chee Fu,Chinese University of Hong Kong,sigmod,2.0,0.5333333333333333,2010
+Ada Wai-Chee Fu,Chinese University of Hong Kong,sigmod,2.0,0.5,2013
+Ada Wai-Chee Fu,Chinese University of Hong Kong,sigmod,2.0,0.6666666666666666,2015
+Ada Wai-Chee Fu,Chinese University of Hong Kong,sigmod,1.0,0.3333333333333333,2016
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.5,1994
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.25,2005
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,3.0,0.7,2007
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,2.0,0.3666666666666667,2008
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.2,2009
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.25,2013
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.25,2014
+Ada Wai-Chee Fu,Chinese University of Hong Kong,vldb,1.0,0.25,2017
+Adalberto L. Simeone,KU Leuven,chiconf,1.0,0.3333333333333333,2015
+Adalberto L. Simeone,KU Leuven,vr,1.0,0.3333333333333333,2017
+Adam A. Porter,University of Maryland - College Park,fse,1.0,0.25,1995
+Adam A. Porter,University of Maryland - College Park,fse,1.0,0.2,2005
+Adam A. Porter,University of Maryland - College Park,fse,1.0,0.5,2010
+Adam A. Porter,University of Maryland - College Park,fse,1.0,0.2,2016
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.25,1991
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.5,1994
+Adam A. Porter,University of Maryland - College Park,icse,3.0,0.7333333333333334,1997
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.2,1998
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.3333333333333333,2000
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.5,2002
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.16666666666666666,2004
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.14285714285714285,2005
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.2,2010
+Adam A. Porter,University of Maryland - College Park,icse,1.0,0.3333333333333333,2012
+Adam A. Porter,University of Maryland - College Park,issta,1.0,0.3333333333333333,2004
+Adam A. Porter,University of Maryland - College Park,issta,1.0,0.25,2008
+Adam A. Porter,University of Maryland - College Park,issta,1.0,0.3333333333333333,2009
+Adam A. Porter,University of Maryland - College Park,issta,1.0,0.25,2011
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ccs,1.0,0.14285714285714285,2014
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ccs,1.0,0.25,2016
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ccs,2.0,0.225,2018
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ccs,1.0,0.16666666666666666,2019
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,imc,1.0,0.2,2014
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ndss,1.0,0.16666666666666666,2012
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ndss,1.0,0.2,2014
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ndss,2.0,0.45,2018
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,ndss,1.0,0.14285714285714285,2019
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,oakland,1.0,0.16666666666666666,2018
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,usenixsec,3.0,0.65,2015
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,usenixsec,1.0,0.2,2016
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,usenixsec,2.0,0.47619047619047616,2018
+Adam Bates 0001,Univ. of Illinois at Urbana-Champaign,www,1.0,0.125,2017
