@@ -1,15 +1,19 @@
 // global vars
-var ai_conference = ["aaai", "ijcai", "cvpr", "eccv", "iccv", "icml", "kdd", 
-    "nips", "acl", "emnlp", "naacl", "sigir", "www"];
-var theory_conference = ["focs", "soda", "stoc", "crypto", "eurocrypt", 
-    "cav", "lics"];
-var systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi", 
+var ai_conference = ["aaai", "ijcai", "cvpr", "eccv", "iccv", "icml", "kdd",
+    "nips", "acl", "emnlp", "naacl", "sigir", "www"
+];
+var theory_conference = ["focs", "soda", "stoc", "crypto", "eurocrypt",
+    "cav", "lics"
+];
+var systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi",
     "ccs", "oakland", "usenixsec", "sigmod", "vldb", "icde", "pods",
-    "dac", "iccad", "emsoft", "rtas", "rtss", "hpdc", "ics", "sc", 
+    "dac", "iccad", "emsoft", "rtas", "rtss", "hpdc", "ics", "sc",
     "mobicom", "mobisys", "sensys", "imc", "sigmetrics", "osdi",
-    "sosp", "pldi", "popl", "icfp", "oopsla", "fse", "icse", "ase", "issta"];
+    "sosp", "pldi", "popl", "icfp", "oopsla", "fse", "icse", "ase", "issta"
+];
 var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
-    "ec", "wine", "chi", "ubicomp", "uist", "icra", "iros", "rss", "vis", "vr"];    
+    "ec", "wine", "chi", "ubicomp", "uist", "icra", "iros", "rss", "vis", "vr"
+];
 
 
 // data loader
@@ -24,24 +28,21 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                     return flag;
                 }
             }
-        } 
-        else if (area == "Theory") {
+        } else if (area == "Theory") {
             for (let i = 0; i < theory_conference.length; i++) {
                 if (theory_conference[i] == conf) {
                     flag = 1;
                     return flag;
                 }
             }
-        } 
-        else if (area == "Systems") {
+        } else if (area == "Systems") {
             for (let i = 0; i < systems_conference.length; i++) {
                 if (systems_conference[i] == conf) {
                     flag = 1;
                     return flag;
                 }
             }
-        }
-        else if (area == "Interdisciplinary Areas") {
+        } else if (area == "Interdisciplinary Areas") {
             for (let i = 0; i < interdiscip_conference.length; i++) {
                 if (interdiscip_conference[i] == conf) {
                     flag = 1;
@@ -52,12 +53,18 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
         return flag;
     }
 
+    // main function
     // process csv data in area from time [starttime, endtime]
     // select top_k professors
-    function read_data(area, start_time, end_time, top_k = 10) {
-        let prof = [];
-        path = "js/generated-author-info-tiny.csv";
-        d3.csv(path, function(csvdata) {
+    function read_data(area, start_time, end_time, top_k = 10,
+        path = "data/generated-author-info.csv") {
+
+        d3.select("#linechartdiv")
+            .selectAll("svg")
+            .remove();
+
+        return d3.csv(path, function(csvdata) {
+            let prof = [];
             //console.log(csvdata);
             let id = 0;
             for (let i = 0; i < csvdata.length; i++) {
@@ -74,8 +81,7 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                             pub: 1,
                             chosen: 0
                         })
-                    } 
-                    else {
+                    } else {
                         if (name == prof[id].name)
                             prof[id].pub++;
                         else {
@@ -90,7 +96,7 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                 }
             }
 
-            console.log(prof)
+            //console.log(prof);
 
             if (id == prof.length)
                 console.log("id equals prof.length");
@@ -113,9 +119,6 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
 
             console.log("top_profs are", top_k_prof);
 
-            //svg.selectAll(".dots").remove();
-            //svg.selectAll(".line").remove();
-
             for (let k = 0; k < top_k; k++) {
                 let data_temp = [];
                 let data = [];
@@ -134,47 +137,31 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                     }
                 }
                 //console.log("data_temp is", data_temp)
-                console.log("data is", data)
+                //console.log("data is", data)
                 data.push(data_temp);
                 main_draw(data);
             }
         });
-
     }
 }
-
-read_data("AI", 2010, 2018);
 
 // draw svg
 {
     function main_draw(data) {
 
-        let colors = [
-            'steelblue',
-            'green',
-            'red',
-            'purple'
-        ];
+        let line_color = 'steelblue', 
+            dot_color = 'black';
 
-        let color1 = [];
-
-        for (let i = 0; i < 4; i++) {
-            color1.push({
-                top: 50 * i,
-                below: 50 * (i + 1),
-                id: i
-            })
-        }
-        let margin = { top: 2, right: 330, bottom: 3, left: 50 },
+        let margin = { top: 10, right: 330, bottom: 20, left: 40 },
             width = 1080 - margin.left - margin.right,
-            height = 50 - margin.top - margin.bottom;
+            height = 80 - margin.top - margin.bottom;
 
         let x = d3.scale.linear()
             .domain([2000, 2019])
             .range([0, width]);
 
         let y = d3.scale.linear()
-            .domain([0, 8])
+            .domain([0, 10])
             .range([height, 0]);
 
         //x轴设置
@@ -189,6 +176,7 @@ read_data("AI", 2010, 2018);
         //y轴设置
         let yAxis = d3.svg.axis()
             .scale(y)
+            .ticks(2)
             .tickPadding(10)
             .tickSize(-width)
             .tickSubdivide(true)
@@ -209,35 +197,41 @@ read_data("AI", 2010, 2018);
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+        // axes
         svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis);
 
         svg.append("g")
+            .attr("class", "x axis")
+            .append("text")
+            .attr("class", "axis-label")
+            .attr("y", height+10)
+            .attr("x", width)
+            .text('Year');
+        
+        svg.append("g")
             .attr("class", "y axis")
             .call(yAxis);
-
+        
         svg.append("g")
             .attr("class", "y axis")
             .append("text")
             .attr("class", "axis-label")
             .attr("transform", "rotate(-90)")
-            .attr("y", (-margin.left) + 10)
+            .attr("y", -margin.left+15)
             .attr("x", -height / 2)
             .text('Pubs');
 
-
-        svg.selectAll(".line").remove();
-        svg.selectAll(".dots").remove();
-
+        // line chart
         svg.append("clipPath")
             .attr("id", "clip")
             .append("rect")
             .attr("width", width)
             .attr("height", height);
 
-        var line = d3.svg.line()
+        let line = d3.svg.line()
             .interpolate("linear")
             .x(function(d) { return x(d.x); })
             .y(function(d) { return y(d.y); });
@@ -248,13 +242,11 @@ read_data("AI", 2010, 2018);
             .append("path")
             .attr("class", "line")
             .attr("clip-path", "url(#clip)")
-            .attr('stroke', function(d, i) {
-                return colors[i];
-            })
+            .attr('stroke', line_color)
             .attr("d", line);
 
 
-        var points = svg.selectAll('.dots')
+        let points = svg.selectAll('.dots')
             .data(data)
             .enter()
             .append("g")
@@ -263,7 +255,7 @@ read_data("AI", 2010, 2018);
 
         points.selectAll('.dot')
             .data(function(d, index) {
-                var a = [];
+                let a = [];
                 d.forEach(function(point, i) {
                     a.push({ 'index': d.id, 'point': point });
                 });
@@ -273,9 +265,7 @@ read_data("AI", 2010, 2018);
             .append('circle')
             .attr('class', 'dot')
             .attr("r", 2)
-            .attr('fill', function(d, i) {
-                return colors[d.index];
-            })
+            .attr('fill', dot_color)
             .attr("transform", function(d) {
                 return "translate(" + x(d.point.x) + "," + y(d.point.y) + ")";
             });
@@ -292,3 +282,6 @@ read_data("AI", 2010, 2018);
 
     }
 }
+
+// main
+read_data("AI", 2010, 2018, 10);

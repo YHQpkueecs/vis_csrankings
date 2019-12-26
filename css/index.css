@@ -1,5 +1,5 @@
 svg {
-    border: solid #ccc 4px;
+    border: solid #eee 1px;
     /* svg 边框 */
     margin-top: 0px;
     /* 顶部边距 */
@@ -37,7 +37,7 @@ body {
 }
 
 .axis .axis-label {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .line {

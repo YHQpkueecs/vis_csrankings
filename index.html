@@ -6,14 +6,18 @@
     <title>CSRankings可视化</title>
     <link href="css/index.css" type="text/css" rel="stylesheet" />
     <link href="css/d3-tip.css" type="text/css" rel="stylesheet" />
+    <link href="css/jquery.range.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <h2>CSRankings可视化</h2>
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery/jquery-3.2.1.js"></script>
+    <script src="js/jquery/jquery.range.js"></script>
+    <script src="js/d3.v3.min.js"></script>
     <!-- 主视图：折线图 -->
     <div class="svgContainer" id="linechartdiv">
         <h1 align="center">
-            领域publication排名前十的老师
+            CSRankings: 领域排名前十的老师
         </h1>
         <div class="btn-group" data-toggle="buttons" align="center">
             <h3>
@@ -32,6 +36,29 @@
                 </label>
             </h3>
         </div>
+        <div align="center">
+            <h3>
+                请选择排名的时间段：
+                <input type="hidden" id="year-slider" value="2010,2018" />
+            </h3>
+            <script>
+            $(document).ready(function() {
+
+                $('#year-slider').jRange({
+                    from: 1970,
+                    to: 2019,
+                    step: 1,
+                    format: '%s',
+                    width: 300,
+                    showLabels: true,
+                    showScale: false,
+                    isRange: true,
+                    theme: "theme-blue"
+
+                });
+            });
+            </script>
+        </div>
         <!--<svg id="linechartSVG">
         </svg>-->
     </div>
@@ -45,8 +72,6 @@
         <svg id="sunburstSVG">
         </svg>
     </div>
-    <script src="js/jquery/jquery-3.2.1.min.js"></script>
-    <script src="js/d3.v3.min.js"></script>
     <script src="js/vis1_linechart.js"></script>
 </body>
 
