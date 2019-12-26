@@ -11,9 +11,29 @@
 <body>
     <h2>CSRankings可视化</h2>
     <!-- 主视图：折线图 -->
-    <div class="svgContainer">
-        <svg id="linechartSVG">
-        </svg>
+    <div class="svgContainer" id="linechartdiv">
+        <h1 align="center">
+            领域publication排名前十的老师
+        </h1>
+        <div class="btn-group" data-toggle="buttons" align="center">
+            <h3>
+                请选择一个领域：
+                <label for="" class="btn btn-primary">
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" checked="checked" value="AI">AI
+                </label>
+                <label for="" class="btn btn-primary">
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Systems">Systems
+                </label>
+                <label for="" class="btn btn-primary">
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Theory">Theory
+                </label>
+                <label for="" class="btn btn-primary">
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Interdisciplinary Areas">Interdisciplinary Areas
+                </label>
+            </h3>
+        </div>
+        <!--<svg id="linechartSVG">
+        </svg>-->
     </div>
     <!-- top 10 publication：条形图 -->
     <div class="svgContainer">
@@ -25,6 +45,9 @@
         <svg id="sunburstSVG">
         </svg>
     </div>
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/vis1_linechart.js"></script>
 </body>
 
 </html>
