@@ -198,9 +198,11 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .scaleExtent([-10, 10]) //可缩放的范围
             .on("zoom", zoomed);
 
-        let svg = d3.select("#linechartdiv")
+        let div = d3.select("#linechartdiv")
             .append("div")
-            .append("svg")
+            .attr("class", "lineChartInnerDiv");
+
+        let svg = div.append("svg")
             .call(zoom)
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -321,8 +323,42 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             });
         }
 
+        // 点击具体教授，更新其他视图
+        div.on("mousedown", function() {
+            d3.select("#linechartdiv")
+                .selectAll(".lineChartInnerDiv")
+                .attr("style", "background: white;");
+            d3.select(this)
+                .attr("style", "background: yellow;");
+            on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
+        })
+
     }
 }
 
 // main
 read_data("AI", 2010, 2018, 10);
+
+
+// interface for other parts
+{
+    // 传给sunburst的参数： 大学名称，开始年份，截止年份
+    function on_update_sunburst(univ, start_time, end_time) {
+        console.log("update sunburst, ", univ, start_time, end_time);
+        // TODO: call the sunburst update function.
+        /*
+        To 甘：
+        几点注意事项
+        1.请不要修改index.html <div class="svgContainer" id="linechartdiv">内的部分；
+        2.vis1_linechart.js开头用var定义了几个全局变量，请小心不要重名。写js时全局变量请集中
+        放在文件开头，尽量多使用let声明局部变量。
+        3.只要在这里添加更新sunburst的函数，应当就能通过点击主视图中十个框的任意一个框，
+        来刷新sunburst图。
+        谢谢！ ——袁 12/27
+        */
+    }
+
+    function on_update_barchart() {
+        console.log("not implemented!");
+    }
+}
