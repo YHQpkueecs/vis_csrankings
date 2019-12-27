@@ -14,6 +14,7 @@ var systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi",
 var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
     "ec", "wine", "chi", "ubicomp", "uist", "icra", "iros", "rss", "vis", "vr"
 ];
+var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI";
 
 
 // data loader
@@ -58,6 +59,8 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
     // select top_k professors
     function read_data(area, start_time, end_time, top_k = 10,
         path = "data/generated-author-info.csv") {
+        area_linechart = area;
+        console.log("state changed:", begin_year_linechart, end_year_linechart, area_linechart);
 
         d3.select("#linechartdiv")
             .selectAll("svg")
@@ -79,7 +82,8 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                         prof.push({
                             name: name,
                             pub: 1,
-                            chosen: 0
+                            chosen: 0,
+                            dept: univ
                         })
                     } else {
                         if (name == prof[id].name)
@@ -88,7 +92,8 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                             prof.push({
                                 name: name,
                                 pub: 1,
-                                chosen: 0
+                                chosen: 0,
+                                dept: univ
                             })
                             id++;
                         }
@@ -133,13 +138,15 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
                     //let find = 0;
                     if (csvdata[i].name == top_k_prof[k].name) {
                         let cur_year = csvdata[i].year;
+                        if (cur_year > 2019)
+                            cur_year = 2019;
                         data_temp[cur_year - 1970].y++;
                     }
                 }
                 //console.log("data_temp is", data_temp)
                 //console.log("data is", data)
                 data.push(data_temp);
-                main_draw(data);
+                main_draw(data, top_k_prof[k]);
             }
         });
     }
@@ -147,13 +154,15 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
 
 // draw svg
 {
-    function main_draw(data) {
+    // data: publications every year;
+    // prof: professor info
+    function main_draw(data, prof) {
 
-        let line_color = 'steelblue', 
-            dot_color = 'black';
+        let line_color = '#02f78e', 
+            dot_color = '#272727';
 
-        let margin = { top: 10, right: 330, bottom: 20, left: 40 },
-            width = 1080 - margin.left - margin.right,
+        let margin = { top: 10, right: 300, bottom: 20, left: 40 },
+            width = 1000 - margin.left - margin.right,
             height = 80 - margin.top - margin.bottom;
 
         let x = d3.scale.linear()
@@ -190,12 +199,44 @@ var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
             .on("zoom", zoomed);
 
         let svg = d3.select("#linechartdiv")
+            .append("div")
             .append("svg")
             .call(zoom)
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // text of professor information
+        let txt_dx = 40, txt_dy = 15, txt_ddy = 20;
+        svg.append("text")
+            .attr("class", "myProfText")
+            .attr("x", width)
+            .attr("y", 0)
+            .attr("dx", txt_dx)
+            .attr("dy", txt_dy)
+            .attr("text-anchor", "start")
+            .attr("font-size", 14)
+            .attr("font-weight", "bold")
+            .text(prof.name);
+        svg.append("text")
+            .attr("class", "myProfText")
+            .attr("x", width)
+            .attr("y", 0)
+            .attr("dx", txt_dx)
+            .attr("dy", txt_dy + txt_ddy)
+            .attr("text-anchor", "start")
+            .attr("font-size", 14)
+            .text(prof.dept);
+        svg.append("text")
+            .attr("class", "myProfText")
+            .attr("x", width)
+            .attr("y", 0)
+            .attr("dx", txt_dx)
+            .attr("dy", txt_dy + txt_ddy*2)
+            .attr("text-anchor", "start")
+            .attr("font-size", 14)
+            .text(" Pubs: " + prof.pub);
 
         // axes
         svg.append("g")

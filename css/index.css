@@ -6,6 +6,12 @@ svg {
     overflow: visible;
 }
 
+#linechartdiv {
+    border: solid #eee 1px;
+    float: left;
+    width: 1000px;
+}
+
 body {
     font: 10px sans-serif;
     margin: 50px;
@@ -54,3 +60,4 @@ body {
 .dot:hover {
     stroke: rgba(68, 127, 255, 0.3);
 }
+

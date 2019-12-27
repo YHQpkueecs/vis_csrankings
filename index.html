@@ -19,28 +19,26 @@
         <h1 align="center">
             CSRankings: 领域排名前十的老师
         </h1>
-        <div class="btn-group" data-toggle="buttons" align="center">
+        <div class="btn-group" data-toggle="buttons" style="position: relative; left: 260px;">
             <h3>
                 请选择一个领域：
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" checked="checked" value="AI">AI
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" checked="checked" value="AI">AI
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Systems">Systems
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Systems">Systems
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Theory">Theory
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Theory">Theory
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, 2010, 2018)" value="Interdisciplinary Areas">Interdisciplinary Areas
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Interdisciplinary Areas">Interdisciplinary Areas
                 </label>
             </h3>
         </div>
-        <div align="center">
-            <h3>
-                请选择排名的时间段：
-                <input type="hidden" id="year-slider" value="2010,2018" />
-            </h3>
+        <div style="position: relative; left: 260px;">
+            <h3> 请选择排名的时间段： </h3>
+            <input type="hidden" id="year-slider" value="2010,2018" />
             <script>
             $(document).ready(function() {
 
@@ -53,12 +51,21 @@
                     showLabels: true,
                     showScale: false,
                     isRange: true,
-                    theme: "theme-blue"
-
+                    width: 450,
+                    theme: "theme-green",
+                    ondragend: function() {
+                        let v = document.getElementById('year-slider')
+                            .getAttribute('value');
+                        v = v.split(',');
+                        begin_year_linechart = parseInt(v[0]);
+                        end_year_linechart = parseInt(v[1]);
+                        read_data(area_linechart, begin_year_linechart, end_year_linechart);
+                    }
                 });
             });
             </script>
         </div>
+        <br>
         <!--<svg id="linechartSVG">
         </svg>-->
     </div>
