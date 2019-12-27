@@ -158,7 +158,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
     // prof: professor info
     function main_draw(data, prof) {
 
-        let line_color = '#02f78e', 
+        let line_color = '#02f78e',
             dot_color = '#272727';
 
         let margin = { top: 10, right: 300, bottom: 20, left: 40 },
@@ -253,11 +253,11 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .attr("y", height+10)
             .attr("x", width)
             .text('Year');
-        
+
         svg.append("g")
             .attr("class", "y axis")
             .call(yAxis);
-        
+
         svg.append("g")
             .attr("class", "y axis")
             .append("text")
@@ -355,6 +355,16 @@ read_data("AI", 2010, 2018, 10);
         3.只要在这里添加更新sunburst的函数，应当就能通过点击主视图中十个框的任意一个框，
         来刷新sunburst图。
         谢谢！ ——袁 12/27
+        */
+        sunburst_draw(univ, start_time, end_time);
+        /*
+        To 袁：
+        1.我这边搭建Node服务器的方式与github上的包不同，我这边无法启动服务器来调试，可能需要您那边调试一下。在我自己搭建的临时服务器上我的代码是可以工作的。
+        （我用的是npm包管理器，里面html和js的管理也与这边不同）
+        2.我没有修改html文件，如果选择器没有正确地选取html中的元素或者html需要修改，可以参考37-45行
+        3.我没有定义任何全局变量，所有在全文件用到的局部变量和常量都在文件开头
+        4.我还没有上色，可能需要我们商量一下具体上色的方式
+        谢谢！ ————甘 12/27
         */
     }
 
