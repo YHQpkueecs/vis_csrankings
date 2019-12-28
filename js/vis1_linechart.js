@@ -66,7 +66,8 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .selectAll("svg")
             .remove();
 
-        return d3.csv(path, function(csvdata) {
+        d3.csv(path)
+            .then(function(csvdata) {
             let prof = [];
             //console.log(csvdata);
             let id = 0;
@@ -165,36 +166,37 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             width = 1000 - margin.left - margin.right,
             height = 80 - margin.top - margin.bottom;
 
-        let x = d3.scale.linear()
+        let x = d3.scaleLinear()
             .domain([2000, 2019])
             .range([0, width]);
 
-        let y = d3.scale.linear()
+        let y = d3.scaleLinear()
             .domain([0, 10])
             .range([height, 0]);
 
+        let x_copy = x.copy(),
+            y_copy = y.copy();
+
         //x轴设置
-        let xAxis = d3.svg.axis()
+        let xAxis = d3.axisBottom()
             .scale(x)
             .ticks(10) //调节刻度大小
             .tickSize(-height)
-            .tickPadding(10)
-            .tickSubdivide(true)
-            .orient("bottom");
+            .tickPadding(10);
+            //.tickSubdivide(true);
 
         //y轴设置
-        let yAxis = d3.svg.axis()
+        let yAxis = d3.axisLeft()
             .scale(y)
             .ticks(2)
             .tickPadding(10)
-            .tickSize(-width)
-            .tickSubdivide(true)
-            .orient("left");
+            .tickSize(-width);
+            //.tickSubdivide(true);
 
         //缩放拖拽
-        let zoom = d3.behavior.zoom()
-            .x(x)
-            .y(y)
+        let zoom = d3.zoom()
+            //.x(x)
+            //.y(y)
             .scaleExtent([-10, 10]) //可缩放的范围
             .on("zoom", zoomed);
 
@@ -274,8 +276,8 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .attr("width", width)
             .attr("height", height);
 
-        let line = d3.svg.line()
-            .interpolate("linear")
+        let line = d3.line()
+            //.interpolate("linear")
             .x(function(d) { return x(d.x); })
             .y(function(d) { return y(d.y); });
 
@@ -314,6 +316,10 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             });
 
         function zoomed() {
+            x = d3.event.transform.rescaleX(x_copy);
+            y = d3.event.transform.rescaleY(y_copy);
+            xAxis.scale(x);
+            yAxis.scale(y);
             svg.select(".x.axis").call(xAxis);
             svg.select(".y.axis").call(yAxis);
             svg.selectAll('path.line').attr('d', line);
@@ -324,7 +330,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
         }
 
         // 点击具体教授，更新其他视图
-        div.on("mousedown", function() {
+        div.on("click", function() {
             d3.select("#linechartdiv")
                 .selectAll(".lineChartInnerDiv")
                 .attr("style", "background: white;");

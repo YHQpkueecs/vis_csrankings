@@ -12,6 +12,10 @@ svg {
     width: 1000px;
 }
 
+.lineChartInnerDiv {
+    border: solid #000 0px;
+}
+
 body {
     font: 10px sans-serif;
     margin: 50px;
