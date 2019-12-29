@@ -51,6 +51,7 @@ let faculty_pub_info = new Array(),
                                         faculty_pub_info[csvdata3[i].name][j].abstract = csvdata3[i]["abstract" + (j + 1).toString()];
                                 }
                                 console.log("Faculties publication data loaded!");
+                                drawBarChart({name: "Eric P. Xing", dept: "Carnegie Mellon University"});
                                 //console.log("faculty_pub_info", faculty_pub_info["Eric P. Xing"]);
                             });
                     });
@@ -63,8 +64,8 @@ let faculty_pub_info = new Array(),
     function drawBarChart(prof) {
         let margin = { top: 80, right: 30, bottom: 250, left: 45 },
             small_pad = 20,
-            width = 900,
-            height = 600,
+            width = barchart_w,
+            height = barchart_h,
             bar_width = 70,
             bar_max_height = height - margin.bottom - margin.top - small_pad,
             bar_min_height = 50;

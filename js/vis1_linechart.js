@@ -163,8 +163,8 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             dot_color = '#272727';
 
         let margin = { top: 10, right: 300, bottom: 20, left: 40 },
-            width = 1000 - margin.left - margin.right,
-            height = 80 - margin.top - margin.bottom;
+            width = linechart_w - margin.left - margin.right,
+            height = linechart_h - margin.top - margin.bottom;
 
         let x = d3.scaleLinear()
             .domain([2000, 2019])
