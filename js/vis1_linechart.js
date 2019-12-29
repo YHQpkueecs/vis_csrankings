@@ -1,17 +1,17 @@
 // global vars
-var ai_conference = ["aaai", "ijcai", "cvpr", "eccv", "iccv", "icml", "kdd",
+let ai_conference = ["aaai", "ijcai", "cvpr", "eccv", "iccv", "icml", "kdd",
     "nips", "acl", "emnlp", "naacl", "sigir", "www"
 ];
-var theory_conference = ["focs", "soda", "stoc", "crypto", "eurocrypt",
+let theory_conference = ["focs", "soda", "stoc", "crypto", "eurocrypt",
     "cav", "lics"
 ];
-var systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi",
+let systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi",
     "ccs", "oakland", "usenixsec", "sigmod", "vldb", "icde", "pods",
     "dac", "iccad", "emsoft", "rtas", "rtss", "hpdc", "ics", "sc",
     "mobicom", "mobisys", "sensys", "imc", "sigmetrics", "osdi",
     "sosp", "pldi", "popl", "icfp", "oopsla", "fse", "icse", "ase", "issta"
 ];
-var interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
+let interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
     "ec", "wine", "chi", "ubicomp", "uist", "icra", "iros", "rss", "vis", "vr"
 ];
 var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI";
@@ -336,6 +336,8 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
                 .attr("style", "background: white;");
             d3.select(this)
                 .attr("style", "background: yellow;");
+                
+            on_update_barchart(prof);
             on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
         })
 
@@ -374,7 +376,8 @@ read_data("AI", 2010, 2018, 10);
         */
     }
 
-    function on_update_barchart() {
-        console.log("not implemented!");
+    function on_update_barchart(name) {
+        console.log("update bar chart, ", name);
+        drawBarChart(name);
     }
 }

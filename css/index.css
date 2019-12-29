@@ -12,6 +12,20 @@ svg {
     width: 1000px;
 }
 
+#barchartdiv{
+    border: solid #eee 1px;
+    float: right;
+    width: 1000px;
+    height: 600px;
+}
+
+#sunburstdiv {
+    border: solid #eee 1px;
+    float: right;
+    width: 1000px;
+    height: 400px;
+}
+
 .lineChartInnerDiv {
     border: solid #000 0px;
 }
