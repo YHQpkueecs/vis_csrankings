@@ -34,14 +34,6 @@ let arc = d3.arc() // <-- 2
     .outerRadius(d => d.y1);
 
 
-// The following lines are for testing SVG graphics drawing, should be edited when we are going to merge the program
-const chart = d3.select('#sunburstSVG')
-    .attr('width', width) // <-- 2
-    .attr('height', height)
-
-const g = chart.append('g') // <-- 3
-    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')'); // <-- 4
-// SVG lines ends
 
 // Main parts begin:
 d3.csv('./data/generated-author-info.csv', d3.autoType)
@@ -53,7 +45,7 @@ d3.csv('./data/generated-author-info.csv', d3.autoType)
             institute[row.dept].push(row);
             return institute;
         }, {});
-        console.log('institutes: ', institutes);
+        //console.log('institutes: ', institutes);
         let insititute_list = Object.keys(institutes);
         // A deep copy
         institutes_edited = JSON.parse(JSON.stringify(institutes));
@@ -61,14 +53,15 @@ d3.csv('./data/generated-author-info.csv', d3.autoType)
         for (let [name, institute] of Object.entries(institutes)) {
             institutes_edited[name] = ins_map(institute)
         }
-        console.log('Edited: ', institutes_edited);
+        //console.log('Edited: ', institutes_edited);
 
     });
 
 
 function sunburst_draw(university, start_year, end_year) {
-    uni_acc = accumulate(institutes_edited[university]);
-    console.log(institutes_edited[university]);
+    let local = JSON.parse(JSON.stringify(institutes_edited[university]));
+    uni_acc = accumulate(local, start_year, end_year);
+    console.log(local);
     console.log(uni_acc);
     let root = d3.hierarchy(uni_acc).sum(d => d.count);
     //let root = d3.hierarchy(uni_acc);
@@ -77,6 +70,20 @@ function sunburst_draw(university, start_year, end_year) {
 
     partition(root); // <-- 1
     partition(adjusted_root);
+
+
+    // The following lines are for testing SVG graphics drawing, should be edited when we are going to merge the program
+    let div = d3.select("#sunburstdiv");
+    div.selectAll("svg")
+        .remove();
+    let chart = div.append("svg")
+        .attr("class", "sunburstSVG")
+        .attr("width", width)
+        .attr("height", height);
+
+    const g = chart.append('g') // <-- 3
+        .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')'); // <-- 4
+    // SVG lines ends
 
     g.selectAll('path')
         .data(root.descendants())
@@ -115,6 +122,7 @@ function accumulate(institute, start_year, end_year) {
         ins_acc.children[area].children = Object.values(ins_acc.children[area].children);
     }
     ins_acc.children = Object.values(ins_acc.children);
+    console.log(ins_acc);
     return ins_acc;
 }
 
