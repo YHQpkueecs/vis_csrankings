@@ -62,11 +62,11 @@ let faculty_pub_info = new Array(),
 // draw
 {
     function drawBarChart(prof) {
-        let margin = { top: 80, right: 30, bottom: 250, left: 45 },
+        let margin = { top: 80, right: 30, bottom: 200, left: 45 },
             small_pad = 20,
             width = barchart_w,
             height = barchart_h,
-            bar_width = 70,
+            bar_width = 60,
             bar_max_height = height - margin.bottom - margin.top - small_pad,
             bar_min_height = 50;
 
@@ -257,7 +257,7 @@ let faculty_pub_info = new Array(),
                     //.style('color', "black")
                     //.style('overflow', 'hidden')
                     //.style('text-overflow', 'ellipsis');
-                dv.html("<font size=3><p><b>Title: </b>" + d.title + "</p>" + 
+                dv.html("<font size=2.5><p><b>Title: </b>" + d.title + "</p>" + 
                 	"<p><b>Area: </b>" + d.tag + ", " + d.label + "</p>" +
                 	"<p><b>Citations: </b>" + d.n_cite + "</p>" + 
                 	"<p><b>Abstract:</b> " + d.abstract + "</p></font>");
