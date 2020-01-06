@@ -79,21 +79,98 @@ function sunburst_draw(university, start_year, end_year) {
         .remove();
     let chart = div.append("svg")
         .attr("class", "sunburstSVG")
-        .attr("width", width)
+        .attr("width", width * 2)
         .attr("height", height);
 
     const g = chart.append('g') // <-- 3
         .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')'); // <-- 4
     // SVG lines ends
 
-    g.selectAll('path')
+    let paths = g.selectAll('path')
         .data(root.descendants())
         .enter()
         .append('path')
         .attr("display", function(d) { return d.depth ? null : "none"; })
         .attr("d", arc)
         .style('stroke', '#fff')
-        .style("fill", function (d) { return area_to_color((d.children ? d : d.parent).data.name); });
+        .style("fill", function(d) { return area_to_color((d.children ? d : d.parent).data.name); });
+
+    // tips
+    let paths_tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d, i) {
+            return "<p>Area: " + d.data.name + "</p>\n" +
+                "<p>Publications: " + d.value + "</p>\n";
+        });
+    paths.call(paths_tip);
+    paths.on("mouseover", function(d, i) {
+            paths_tip.show(d, i); // mouseover：鼠标悬浮在元素上时触发函数 tip.show
+            //d3.select(this)
+            //   .attr("fill", "#80ffff");
+        })
+        .on("mouseout", function(d, i) {
+            paths_tip.hide(d, i);
+            /*
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .attr("fill", tag2color[d.tag]);
+            */
+        });
+
+    // text
+    chart.append("text")
+        .attr("x", width / 2 + width)
+        .attr("y", 50)
+        .attr("text-anchor", "middle")
+        .attr("font-weight", "bold")
+        .attr("font-size", 18)
+        .text(university);
+    // legend
+    {
+        let domains = ['AI', 'Systems', 'Theory', 'Interdisciplinary Areas', 'Others', 'Unrecognized'];
+
+        let legend_width = 50,
+            legend_height = 25,
+            legend_x = width + width / 4,
+            legend_y = 100,
+            legend_padding = 5;
+        let legend_rects = chart.selectAll(".myLegendRect")
+            .data(domains)
+            .enter()
+            .append("rect")
+            .attr("class", "myLegendRect")
+            .attr("x", legend_x)
+            .attr("y", function(d, i) {
+                return legend_y + i * legend_height;
+            })
+            .attr("width", legend_width - legend_padding)
+            .attr("height", legend_height - legend_padding)
+            .attr("fill", function(d) {
+                return area_to_color(d);
+            });
+        let legend_texts = chart.selectAll(".myLegendText")
+            .data(domains)
+            .enter()
+            .append("text")
+            .attr("class", "myLegendText")
+            .attr("x", legend_x + legend_width)
+            .attr("y", function(d, i) {
+                return legend_y + i * legend_height;
+            })
+            .attr("dx", function() {
+                return 3;
+            })
+            .attr("dy", function(d) {
+                return 14;
+            })
+            .attr("text-anchor", "start")
+            .attr("font-size", 14)
+            .text(function(d) {
+                return d;
+            });
+    }
 
 }
 
@@ -215,13 +292,13 @@ function conf_to_area(conf) {
 }
 
 area_to_color = d3.scaleOrdinal()
-  .domain(['AI','Systems','Theory','Interdisciplinary Areas','Others','Unrecognized'])
-  .range([d3.rgb(215,51,55), d3.rgb(34,177,76), d3.rgb(37,0,210), d3.rgb(240,181,0),d3.rgb(120,120,120), d3.rgb(0,0,0)])
+    .domain(['AI', 'Systems', 'Theory', 'Interdisciplinary Areas', 'Others', 'Unrecognized'])
+    .range([d3.rgb(215, 51, 55), d3.rgb(34, 177, 76), d3.rgb(37, 0, 210), d3.rgb(240, 181, 0), d3.rgb(120, 120, 120), d3.rgb(0, 0, 0)])
 
-function sub_to_color_decline(d, scale){
-  let base = d3.hsl(basic_color_scale(d.Department));
-  //console.log('base color: ',base )
-  base.l += 0.5 * Number(d.Subclass)/scale;
-  base.s -= 0.20;
-  return base;
+function sub_to_color_decline(d, scale) {
+    let base = d3.hsl(basic_color_scale(d.Department));
+    //console.log('base color: ',base )
+    base.l += 0.5 * Number(d.Subclass) / scale;
+    base.s -= 0.20;
+    return base;
 }

@@ -367,7 +367,7 @@ var begin_year_linechart = 2010,
         let logo_sz = linechart_h - 10;
         let logo_path = univ2logo[prof.dept];
         if (logo_path == undefined)
-            logo_path = "data/logos/unknown.jpg";
+            logo_path = "data/logos/unknown.png";
         let univ_logo = svg.append("image")
             .attr("class", "univ_logo")
             .attr("width", logo_sz)
@@ -385,11 +385,14 @@ var begin_year_linechart = 2010,
                 .attr("style", "background: yellow;");
 
             on_update_barchart(prof);
+            on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
         });
 
+        /*
         univ_logo.on("click", function() {
             on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
         });
+        */
 
     }
 }

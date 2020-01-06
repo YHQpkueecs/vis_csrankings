@@ -2,6 +2,16 @@
 let faculty_pub_info = new Array(),
     tag2color = new Array();
 
+// pseudo random generator
+{
+    let seed = 9;
+
+    function my_rnd() {
+        seed = (seed * 9301 + 49297) % 233280;
+        return seed / (233280.0);
+    };
+}
+
 // data loader
 {
     function readPubData() {
@@ -34,7 +44,7 @@ let faculty_pub_info = new Array(),
                             for (let j = 0; j < 10; ++j) {
                                 faculty_pub_info[csvdata2[i].name][j].tag = csvdata2[i]["tag" + (j + 1).toString()];
                                 faculty_pub_info[csvdata2[i].name][j].label = csvdata2[i]["lable" + (j + 1).toString()];
-                                tag2color[faculty_pub_info[csvdata2[i].name][j].tag] = d3.interpolateSinebow(Math.random());
+                                tag2color[faculty_pub_info[csvdata2[i].name][j].tag] = d3.interpolateSinebow(my_rnd());
                             }
                         }
                         tag2color["null"] = "gray";
@@ -51,7 +61,7 @@ let faculty_pub_info = new Array(),
                                         faculty_pub_info[csvdata3[i].name][j].abstract = csvdata3[i]["abstract" + (j + 1).toString()];
                                 }
                                 console.log("Faculties publication data loaded!");
-                                drawBarChart({name: "Eric P. Xing", dept: "Carnegie Mellon University"});
+                                drawBarChart({ name: "Eric P. Xing", dept: "Carnegie Mellon University" });
                                 //console.log("faculty_pub_info", faculty_pub_info["Eric P. Xing"]);
                             });
                     });
@@ -240,10 +250,10 @@ let faculty_pub_info = new Array(),
         // details of a selected paper
         {
             rects.on("click", function(d, i) {
-            	svg.selectAll(".barRect")
-            		.attr("stroke-width", 0);
-            	d3.select(this)
-            		.attr("stroke-width", 4)
+                svg.selectAll(".barRect")
+                    .attr("stroke-width", 0);
+                d3.select(this)
+                    .attr("stroke-width", 4)
                     .attr("stroke", "blue");
 
                 svg.selectAll('foreignObject')
@@ -254,13 +264,13 @@ let faculty_pub_info = new Array(),
                     .attr('width', width - margin.left - margin.right)
                     .attr('height', margin.bottom)
                     .append('xhtml:div');
-                    //.style('color', "black")
-                    //.style('overflow', 'hidden')
-                    //.style('text-overflow', 'ellipsis');
+                //.style('color', "black")
+                //.style('overflow', 'hidden')
+                //.style('text-overflow', 'ellipsis');
                 dv.html("<font size=2.5><p><b>Title: </b>" + d.title + "</p>" +
-                	"<p><b>Area: </b>" + d.tag + ", " + d.label + "</p>" +
-                	"<p><b>Citations: </b>" + d.n_cite + "</p>" +
-                	"<p><b>Abstract:</b> " + d.abstract + "</p></font>");
+                    "<p><b>Area: </b>" + d.tag + ", " + d.label + "</p>" +
+                    "<p><b>Citations: </b>" + d.n_cite + "</p>" +
+                    "<p><b>Abstract:</b> " + d.abstract + "</p></font>");
             });
         }
     }
