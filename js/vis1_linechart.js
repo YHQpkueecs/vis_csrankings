@@ -14,7 +14,29 @@ let systems_conference = ["asplos", "isca", "micro", "sigcomm", "nsdi",
 let interdiscip_conference = ["ismb", "recomb", "siggraph", "siggraph-asia",
     "ec", "wine", "chi", "ubicomp", "uist", "icra", "iros", "rss", "vis", "vr"
 ];
-var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI";
+let univ2logo = {"Carnegie Mellon University": "data/logos/1.Carnegie Mellon University.jpg",
+"University of California - San Diego": "data/logos/10.University of California - San Diego.png",
+"ETH Zurich": "data/logos/11.ETH Zurich.jpg",
+"University of Maryland - College Park": "data/logos/12.University of Maryland - College Park.png",
+"Georgia Institute of Technology": "data/logos/13.Georgia Institute of Technology.png",
+"University of Wisconsin - Madison": "data/logos/14.University of Wisconsin - Madison.png",
+"Columbia University": "data/logos/15.Columbia University.jpg",
+"National University of Singapore": "data/logos/16.National University of Singapore.png",
+"Northeastern University": "data/logos/17.Northeastern University.png",
+"University of Toronto": "data/logos/18.University of Toronto.png",
+"University of California - Los Angeles": "data/logos/19.University of California - Los Angeles.png",
+"Massachusetts Institute of Technology": "data/logos/2.Massachusetts Institute of Technology.jpg",
+"University of Pennsylvania": "data/logos/20.University of Pennsylvania.png",
+"Univ": "data/logos/3.Univ. of Illinois at Urbana-Champaign.png",
+"Stanford University": "data/logos/4.Stanford University.jpg",
+"University of California - Berkeley": "data/logos/5.University of California - Berkeley.jpg",
+"University of Washington": "data/logos/6.University of Washington.png",
+"Cornell University": "data/logos/7.Cornell University.jpg",
+"University of Michigan": "data/logos/8.University of Michigan.png",
+"Tsinghua University": "data/logos/9.Tsinghua University.png"};
+var begin_year_linechart = 2010,
+    end_year_linechart = 2018,
+    area_linechart = "AI";
 
 
 // data loader
@@ -68,89 +90,99 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
 
         d3.csv(path)
             .then(function(csvdata) {
-            let prof = [];
-            //console.log(csvdata);
-            let id = 0;
-            for (let i = 0; i < csvdata.length; i++) {
-                let name = csvdata[i].name;
-                let univ = csvdata[i].dept;
-                let conf = csvdata[i].area;
-                let year = +csvdata[i].year; // integer
-                //console.log(name, univ, conf, year);
+                let prof = [];
+                //console.log(csvdata);
+                let id = 0;
+                for (let i = 0; i < csvdata.length; i++) {
+                    let name = csvdata[i].name;
+                    let univ = csvdata[i].dept;
+                    let conf = csvdata[i].area;
+                    let year = +csvdata[i].year; // integer
+                    //console.log(name, univ, conf, year);
 
-                if (start_time <= year && year <= end_time && in_this_area(area, conf)) {
-                    if (prof.length == 0) {
-                        prof.push({
-                            name: name,
-                            pub: 1,
-                            chosen: 0,
-                            dept: univ
-                        })
-                    } else {
-                        if (name == prof[id].name)
-                            prof[id].pub++;
-                        else {
+                    if (start_time <= year && year <= end_time && in_this_area(area, conf)) {
+                        if (prof.length == 0) {
                             prof.push({
                                 name: name,
                                 pub: 1,
                                 chosen: 0,
                                 dept: univ
                             })
-                            id++;
+                        } else {
+                            if (name == prof[id].name)
+                                prof[id].pub++;
+                            else {
+                                prof.push({
+                                    name: name,
+                                    pub: 1,
+                                    chosen: 0,
+                                    dept: univ
+                                })
+                                id++;
+                            }
                         }
                     }
                 }
-            }
 
-            //console.log(prof);
+                //console.log(prof);
 
-            if (id == prof.length)
-                console.log("id equals prof.length");
+                if (id == prof.length)
+                    console.log("id equals prof.length");
 
-            let top_k_prof = [];
+                let top_k_prof = [];
 
-            for (let k = 0; k < top_k; k++) {
-                let max_pub = 0;
-                let max_id = -1;
-                for (let j = 0; j < id; j++)
-                    if (prof[j].chosen == 0 && prof[j].pub > max_pub) {
-                        max_pub = prof[j].pub;
-                        max_id = j;
-                    }
-                //console.log(max_id)
-                prof[max_id].chosen = 1;
-                top_k_prof.push(prof[max_id]);
+                for (let k = 0; k < top_k; k++) {
+                    let max_pub = 0;
+                    let max_id = -1;
+                    for (let j = 0; j < id; j++)
+                        if (prof[j].chosen == 0 && prof[j].pub > max_pub) {
+                            max_pub = prof[j].pub;
+                            max_id = j;
+                        }
+                    //console.log(max_id)
+                    prof[max_id].chosen = 1;
+                    top_k_prof.push(prof[max_id]);
 
-            }
-
-            console.log("top_profs are", top_k_prof);
-
-            for (let k = 0; k < top_k; k++) {
-                let data_temp = [];
-                let data = [];
-                for (let year = 1970; year <= 2019; year++) {
-                    data_temp.push({
-                        x: year,
-                        y: 0
-                    });
                 }
 
-                for (let i = 0; i < csvdata.length; i++) {
-                    //let find = 0;
-                    if (csvdata[i].name == top_k_prof[k].name) {
-                        let cur_year = csvdata[i].year;
-                        if (cur_year > 2019)
-                            cur_year = 2019;
-                        data_temp[cur_year - 1970].y++;
+                console.log("top_profs are", top_k_prof);
+
+                for (let k = 0; k < top_k; k++) {
+                    let data_temp = [];
+                    let data = [];
+                    for (let year = 1970; year <= 2019; year++) {
+                        data_temp.push({
+                            x: year,
+                            y: 0
+                        });
                     }
+
+                    for (let i = 0; i < csvdata.length; i++) {
+                        //let find = 0;
+                        if (csvdata[i].name == top_k_prof[k].name) {
+                            let cur_year = csvdata[i].year;
+                            if (cur_year > 2019)
+                                cur_year = 2019;
+                            data_temp[cur_year - 1970].y++;
+                        }
+                    }
+                    //console.log("data_temp is", data_temp)
+                    //console.log("data is", data)
+                    data.push(data_temp);
+                    main_draw(data, top_k_prof[k]);
                 }
-                //console.log("data_temp is", data_temp)
-                //console.log("data is", data)
-                data.push(data_temp);
-                main_draw(data, top_k_prof[k]);
-            }
+            });
+    }
+
+    /*
+    // process logos of university
+    function process_logo(path = "data/logos") {
+        let fs = require("fs");
+        fs.readdir(path, function(err, items) {
+            console.log(items);
         });
     }
+    */
 }
 
 // draw svg
@@ -162,7 +194,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
         let line_color = '#02f78e',
             dot_color = '#272727';
 
-        let margin = { top: 10, right: 300, bottom: 20, left: 40 },
+        let margin = { top: 10, right: 300 + 80, bottom: 20, left: 40 },
             width = linechart_w - margin.left - margin.right,
             height = linechart_h - margin.top - margin.bottom;
 
@@ -183,7 +215,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .ticks(10) //调节刻度大小
             .tickSize(-height)
             .tickPadding(10);
-            //.tickSubdivide(true);
+        //.tickSubdivide(true);
 
         //y轴设置
         let yAxis = d3.axisLeft()
@@ -191,7 +223,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .ticks(2)
             .tickPadding(10)
             .tickSize(-width);
-            //.tickSubdivide(true);
+        //.tickSubdivide(true);
 
         //缩放拖拽
         let zoom = d3.zoom()
@@ -212,7 +244,9 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         // text of professor information
-        let txt_dx = 40, txt_dy = 15, txt_ddy = 20;
+        let txt_dx = 40,
+            txt_dy = 15,
+            txt_ddy = 20;
         svg.append("text")
             .attr("class", "myProfText")
             .attr("x", width)
@@ -237,7 +271,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .attr("x", width)
             .attr("y", 0)
             .attr("dx", txt_dx)
-            .attr("dy", txt_dy + txt_ddy*2)
+            .attr("dy", txt_dy + txt_ddy * 2)
             .attr("text-anchor", "start")
             .attr("font-size", 14)
             .text(" Pubs: " + prof.pub);
@@ -252,7 +286,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .attr("class", "x axis")
             .append("text")
             .attr("class", "axis-label")
-            .attr("y", height+10)
+            .attr("y", height + 10)
             .attr("x", width)
             .text('Year');
 
@@ -265,7 +299,7 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             .append("text")
             .attr("class", "axis-label")
             .attr("transform", "rotate(-90)")
-            .attr("y", -margin.left+15)
+            .attr("y", -margin.left + 15)
             .attr("x", -height / 2)
             .text('Pubs');
 
@@ -329,6 +363,19 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
             });
         }
 
+        // 校徽图片
+        let logo_sz = linechart_h - 10;
+        let logo_path = univ2logo[prof.dept];
+        if (logo_path == undefined)
+            logo_path = "data/logos/unknown.jpg";
+        let univ_logo = svg.append("image")
+            .attr("class", "univ_logo")
+            .attr("width", logo_sz)
+            .attr("height", logo_sz)
+            .attr("x", linechart_w - logo_sz - margin.left - 10)
+            .attr("y", -margin.top + 5)
+            .attr("xlink:href", logo_path);
+
         // 点击具体教授，更新其他视图
         div.on("click", function() {
             d3.select("#linechartdiv")
@@ -336,15 +383,19 @@ var begin_year_linechart = 2010, end_year_linechart = 2018, area_linechart = "AI
                 .attr("style", "background: white;");
             d3.select(this)
                 .attr("style", "background: yellow;");
-                
+
             on_update_barchart(prof);
+        });
+
+        univ_logo.on("click", function() {
             on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
-        })
+        });
 
     }
 }
 
 // main
+//process_logo("data/logos");
 read_data("AI", 2010, 2018, 10);
 
 

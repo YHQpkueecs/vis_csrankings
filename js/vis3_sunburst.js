@@ -16,8 +16,8 @@ const interval = end_year_all - start_year_all;
 // const ends
 
 //********The following lines are here to indicate the size of the sunburst graphics
-let width = 500;
-let height = 500;
+let width = 400;
+let height = 400;
 let radius = Math.min(width, height) / 2;
 //******************************
 
@@ -73,7 +73,8 @@ function sunburst_draw(university, start_year, end_year) {
 
 
     // The following lines are for testing SVG graphics drawing, should be edited when we are going to merge the program
-    let div = d3.select("#sunburstdiv");
+    let div = d3.select("#sunburstdiv")
+        .attr("style", "width: " + sunburst_w + "px; height:" + sunburst_h + "px;");
     div.selectAll("svg")
         .remove();
     let chart = div.append("svg")
