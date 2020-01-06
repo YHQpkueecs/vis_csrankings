@@ -38,7 +38,7 @@ let faculty_pub_info = new Array(),
                             }
                         }
                         tag2color["null"] = "gray";
-                        //console.log(tag2color);
+                        console.log('color mapping: ', tag2color);
 
                         // read abstract.csv to load abstracts
                         d3.csv("data/abstract.csv")
@@ -257,9 +257,9 @@ let faculty_pub_info = new Array(),
                     //.style('color', "black")
                     //.style('overflow', 'hidden')
                     //.style('text-overflow', 'ellipsis');
-                dv.html("<font size=3><p><b>Title: </b>" + d.title + "</p>" + 
+                dv.html("<font size=3><p><b>Title: </b>" + d.title + "</p>" +
                 	"<p><b>Area: </b>" + d.tag + ", " + d.label + "</p>" +
-                	"<p><b>Citations: </b>" + d.n_cite + "</p>" + 
+                	"<p><b>Citations: </b>" + d.n_cite + "</p>" +
                 	"<p><b>Abstract:</b> " + d.abstract + "</p></font>");
             });
         }

@@ -92,6 +92,7 @@ function sunburst_draw(university, start_year, end_year) {
         .attr("display", function(d) { return d.depth ? null : "none"; })
         .attr("d", arc)
         .style('stroke', '#fff')
+        .style("fill", function (d) { return area_to_color((d.children ? d : d.parent).data.name); });
 
 }
 
@@ -210,4 +211,16 @@ function sub_to_area(sub) {
 
 function conf_to_area(conf) {
     return sub_to_area(conf_to_sub(conf));
+}
+
+area_to_color = d3.scaleOrdinal()
+  .domain(['AI','Systems','Theory','Interdisciplinary Areas','Others','Unrecognized'])
+  .range([d3.rgb(215,51,55), d3.rgb(34,177,76), d3.rgb(37,0,210), d3.rgb(240,181,0),d3.rgb(120,120,120), d3.rgb(0,0,0)])
+
+function sub_to_color_decline(d, scale){
+  let base = d3.hsl(basic_color_scale(d.Department));
+  //console.log('base color: ',base )
+  base.l += 0.5 * Number(d.Subclass)/scale;
+  base.s -= 0.20;
+  return base;
 }
