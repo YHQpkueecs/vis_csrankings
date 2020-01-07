@@ -4,7 +4,7 @@ let faculty_pub_info = new Array(),
 
 // pseudo random generator
 {
-    let seed = 9;
+    let seed = 129;
 
     function my_rnd() {
         seed = (seed * 9301 + 49297) % 233280;
@@ -35,7 +35,7 @@ let faculty_pub_info = new Array(),
                 }
 
                 // read labels0.csv to read tags and labels
-                d3.csv("data/label_merge.csv", d3.autoType)
+                d3.csv("data/label_fill.csv", d3.autoType)
                     .then(function(csvdata2) {
                         //console.log(csvdata2);
                         for (let i = 0; i < csvdata2.length; ++i) {
@@ -51,7 +51,7 @@ let faculty_pub_info = new Array(),
                         console.log('color mapping: ', tag2color);
 
                         // read abstract.csv to load abstracts
-                        d3.csv("data/abstract_merge.csv")
+                        d3.csv("data/abstract_fill.csv")
                             .then(function(csvdata3) {
                                 //console.log(csvdata3);
                                 for (let i = 0; i < csvdata3.length; ++i) {
