@@ -46,7 +46,15 @@ let univ2logo = {
     "University of California - Santa Barbara": "data/logos/University of California - Santa Barbara.jpg",
     "University of Pittsburgh": "data/logos/University of Pittsburgh.png",
     "University of Sydney": "data/logos/University of Sydney.png",
-    "University of Texas at Austin": "data/logos/University of Texas at Austin.png"
+    "University of Texas at Austin": "data/logos/University of Texas at Austin.png",
+    "California Institute of Technology": "data/logos/California Institute of Technology.png",
+    "Johns Hopkins University": "data/logos/Johns Hopkins University.jpg",
+    "MPI-IS": "data/logos/MPI-IS.png",
+    "Hebrew University of Jerusalem": "data/logos/Hebrew University of Jerusalem.jpg",
+    "University of Massachusetts Amherst": "data/logos/University of Massachusetts Amherst.png",
+    "University of California - Irvine": "data/logos/University of California - Irvine.png",
+    "HKUST": "data/logos/HKUST.png",
+    "University of Illinois at Chicago": "data/logos/University of Illinois at Chicago.jpg"
 };
 var begin_year_linechart = 2010,
     end_year_linechart = 2018,
