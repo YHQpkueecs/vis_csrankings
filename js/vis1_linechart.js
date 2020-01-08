@@ -54,7 +54,30 @@ let univ2logo = {
     "University of Massachusetts Amherst": "data/logos/University of Massachusetts Amherst.png",
     "University of California - Irvine": "data/logos/University of California - Irvine.png",
     "HKUST": "data/logos/HKUST.png",
-    "University of Illinois at Chicago": "data/logos/University of Illinois at Chicago.jpg"
+    "University of Illinois at Chicago": "data/logos/University of Illinois at Chicago.jpg",
+    "University of York" : "data/logos/University of York.jpg",
+    "Princeton University" : "data/logos/Princeton University.png",
+    "University of Alberta" : "data/logos/University of Alberta.png",
+    "Brown University" : "data/logos/Brown University.png",
+    "University of Edinburgh" : "data/logos/University of Edinburgh.png",
+    "University of British Columbia" : "data/logos/University of British Columbia.jpg",
+    "University of Rochester" : "data/logos/University of Rochester.jpg",
+    "Rutgers University" : "data/logos/Rutgers University.png",
+    "Northwestern University" : "data/logos/Northwestern University.png",
+    "Bilkent University" : "data/logos/Bilkent University.png",
+    "Bar-Ilan University" : "data/logos/Bar-Ilan University.jpg",
+    "University of Southern California" : "data/logos/University of Southern California.png",
+    "Yale University" : "data/logos/Yale University.jpg",
+    "Shanghai Jiao Tong University" : "data/logos/Shanghai Jiao Tong University.png",
+    "Nanjing University" : "data/logos/Nanjing University.png",
+    "Zhejiang University" : "data/logos/Zhejiang University.png",
+    "University of Colorado Boulder" : "data/logos/University of Colorado Boulder.png",
+    "Michigan State University" : "data/logos/Michigan State University.jpg",
+    "Harvard University" : "data/logos/Harvard University.jpg",
+    "Simon Fraser University" : "data/logos/Simon Fraser University.png",
+    "University of Auckland" : "data/logos/University of Auckland.png",
+    "University of Pisa" : "data/logos/University of Pisa.png",
+    "Imperial College London" : "data/logos/Imperial College London.jpg",
 };
 var begin_year_linechart = 2010,
     end_year_linechart = 2018,
@@ -220,8 +243,17 @@ var begin_year_linechart = 2010,
             width = linechart_w - margin.left - margin.right,
             height = linechart_h - margin.top - margin.bottom;
 
+        // 折线图区间不能太小
+        let x_begin = begin_year_linechart, 
+            x_end = end_year_linechart;
+        if (x_end - x_begin < 9) {
+            if (x_end - 9 < 1970)
+                x_end = x_begin + 9;
+            else
+                x_begin = x_end - 9;
+        }
         let x = d3.scaleLinear()
-            .domain([2000, 2019])
+            .domain([x_begin, x_end + 1])
             .range([0, width]);
 
         let y = d3.scaleLinear()
@@ -407,7 +439,7 @@ var begin_year_linechart = 2010,
                 .attr("style", "background: yellow;");
 
             on_update_barchart(prof);
-            on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
+            on_update_sunburst(prof.dept, Math.max(begin_year_linechart, 1990), Math.max(end_year_linechart, 1995));
         });
 
         /*
