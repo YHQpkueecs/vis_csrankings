@@ -94,7 +94,13 @@ function sunburst_draw(university, start_year, end_year) {
         .attr("d", arc)
         .style('stroke', '#fff')
         .style("fill", function (d) { return area_to_color((d.children ? d : d.parent).data.name); });
-
+/*
+    legend = chart.append("g")
+      .attr("class","legend")
+      .attr("transform","translate(50,30)")
+      .style("font-size","12px")
+      .call(d3.legend)
+*/
 }
 
 
