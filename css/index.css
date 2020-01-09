@@ -9,6 +9,9 @@ svg {
 #linechartdiv {
     border: solid #eee 1px;
     float: left;
+    overflow: auto;
+    height: 850px;
+    width: 975px;
 }
 
 #barchartdiv{

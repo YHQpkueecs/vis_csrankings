@@ -55,29 +55,29 @@ let univ2logo = {
     "University of California - Irvine": "data/logos/University of California - Irvine.png",
     "HKUST": "data/logos/HKUST.png",
     "University of Illinois at Chicago": "data/logos/University of Illinois at Chicago.jpg",
-    "University of York" : "data/logos/University of York.jpg",
-    "Princeton University" : "data/logos/Princeton University.png",
-    "University of Alberta" : "data/logos/University of Alberta.png",
-    "Brown University" : "data/logos/Brown University.png",
-    "University of Edinburgh" : "data/logos/University of Edinburgh.png",
-    "University of British Columbia" : "data/logos/University of British Columbia.jpg",
-    "University of Rochester" : "data/logos/University of Rochester.jpg",
-    "Rutgers University" : "data/logos/Rutgers University.png",
-    "Northwestern University" : "data/logos/Northwestern University.png",
-    "Bilkent University" : "data/logos/Bilkent University.png",
-    "Bar-Ilan University" : "data/logos/Bar-Ilan University.jpg",
-    "University of Southern California" : "data/logos/University of Southern California.png",
-    "Yale University" : "data/logos/Yale University.jpg",
-    "Shanghai Jiao Tong University" : "data/logos/Shanghai Jiao Tong University.png",
-    "Nanjing University" : "data/logos/Nanjing University.png",
-    "Zhejiang University" : "data/logos/Zhejiang University.png",
-    "University of Colorado Boulder" : "data/logos/University of Colorado Boulder.png",
-    "Michigan State University" : "data/logos/Michigan State University.jpg",
-    "Harvard University" : "data/logos/Harvard University.jpg",
-    "Simon Fraser University" : "data/logos/Simon Fraser University.png",
-    "University of Auckland" : "data/logos/University of Auckland.png",
-    "University of Pisa" : "data/logos/University of Pisa.png",
-    "Imperial College London" : "data/logos/Imperial College London.jpg",
+    "University of York": "data/logos/University of York.jpg",
+    "Princeton University": "data/logos/Princeton University.png",
+    "University of Alberta": "data/logos/University of Alberta.png",
+    "Brown University": "data/logos/Brown University.png",
+    "University of Edinburgh": "data/logos/University of Edinburgh.png",
+    "University of British Columbia": "data/logos/University of British Columbia.jpg",
+    "University of Rochester": "data/logos/University of Rochester.jpg",
+    "Rutgers University": "data/logos/Rutgers University.png",
+    "Northwestern University": "data/logos/Northwestern University.png",
+    "Bilkent University": "data/logos/Bilkent University.png",
+    "Bar-Ilan University": "data/logos/Bar-Ilan University.jpg",
+    "University of Southern California": "data/logos/University of Southern California.png",
+    "Yale University": "data/logos/Yale University.jpg",
+    "Shanghai Jiao Tong University": "data/logos/Shanghai Jiao Tong University.png",
+    "Nanjing University": "data/logos/Nanjing University.png",
+    "Zhejiang University": "data/logos/Zhejiang University.png",
+    "University of Colorado Boulder": "data/logos/University of Colorado Boulder.png",
+    "Michigan State University": "data/logos/Michigan State University.jpg",
+    "Harvard University": "data/logos/Harvard University.jpg",
+    "Simon Fraser University": "data/logos/Simon Fraser University.png",
+    "University of Auckland": "data/logos/University of Auckland.png",
+    "University of Pisa": "data/logos/University of Pisa.png",
+    "Imperial College London": "data/logos/Imperial College London.jpg",
 };
 var begin_year_linechart = 2010,
     end_year_linechart = 2018,
@@ -244,7 +244,7 @@ var begin_year_linechart = 2010,
             height = linechart_h - margin.top - margin.bottom;
 
         // 折线图区间不能太小
-        let x_begin = begin_year_linechart, 
+        let x_begin = begin_year_linechart,
             x_end = end_year_linechart;
         if (x_end - x_begin < 9) {
             if (x_end - 9 < 1970)
@@ -379,6 +379,40 @@ var begin_year_linechart = 2010,
             .attr("d", line);
 
 
+        // add height
+        let vlines = svg.selectAll('.vlines')
+            .data(data)
+            .enter()
+            .append("g")
+            .attr("class", "vlines")
+            .attr("clip-path", "url(#clip)");
+        vlines.selectAll('.vline')
+            .data(function(d, index) {
+                let a = [];
+                d.forEach(function(point, i) {
+                    a.push({ 'index': d.id, 'point': point });
+                });
+                return a;
+            })
+            .enter()
+            .append("line")
+            .attr("class", "vline")
+            .attr("x1", function(d) {
+                return x(d.point.x);
+            })
+            .attr("y1", function(d) {
+                return y(d.point.y);
+            })
+            .attr("x2", function(d) {
+                return x(d.point.x);
+            })
+            .attr("y2", function(d) {
+                return y(0);
+            })
+            .attr('stroke', line_color)
+            .attr('stroke-width', 2);
+
+
         let points = svg.selectAll('.dots')
             .data(data)
             .enter()
@@ -403,6 +437,7 @@ var begin_year_linechart = 2010,
                 return "translate(" + x(d.point.x) + "," + y(d.point.y) + ")";
             });
 
+
         function zoomed() {
             x = d3.event.transform.rescaleX(x_copy);
             y = d3.event.transform.rescaleY(y_copy);
@@ -415,6 +450,19 @@ var begin_year_linechart = 2010,
             points.selectAll('circle').attr("transform", function(d) {
                 return "translate(" + x(d.point.x) + "," + y(d.point.y) + ")";
             });
+            vlines.selectAll('.vline')
+                .attr("x1", function(d) {
+                    return x(d.point.x);
+                })
+                .attr("y1", function(d) {
+                    return y(d.point.y);
+                })
+                .attr("x2", function(d) {
+                    return x(d.point.x);
+                })
+                .attr("y2", function(d) {
+                    return y(0);
+                });
         }
 
         // 校徽图片
@@ -453,7 +501,7 @@ var begin_year_linechart = 2010,
 
 // main
 //process_logo("data/logos");
-read_data("AI", 2010, 2018, 10);
+read_data("AI", 2010, 2018, num_top_k);
 
 
 // interface for other parts

@@ -15,30 +15,37 @@
     <script src="js/jquery/jquery.range.js"></script>
     <script src="js/d3/d3-v5.12.0/d3.min.js"></script>
     <script src="js/d3/d3-tip.js"></script>
+    <script>
+        // global layout variables
+        var num_top_k = 50;
+        var linechart_w = 900 + 75, linechart_h = 75,
+            barchart_w = 800, barchart_h = 500,
+            sunburst_w = 800, sunburst_h = 400;
+    </script>
     <!-- 主视图：折线图 -->
     <div class="svgContainer" id="linechartdiv">
         <h1 align="center">
-            CSRankings: 领域排名前十的老师
+            CSRankings: Top Faculties
         </h1>
         <div class="btn-group" data-toggle="buttons" style="position: relative; left: 260px;">
             <h3>
-                请选择一个领域：
+                Select an area：
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" checked="checked" value="AI">AI
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart, num_top_k)" checked="checked" value="AI">AI
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Systems">Systems
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart, num_top_k)" value="Systems">Systems
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Theory">Theory
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart, num_top_k)" value="Theory">Theory
                 </label>
                 <label for="" class="btn btn-primary">
-                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart)" value="Interdisciplinary Areas">Interdisciplinary Areas
+                    <input type="radio" name="selected_area" onclick="read_data(this.value, begin_year_linechart, end_year_linechart, num_top_k)" value="Interdisciplinary Areas">Interdisciplinary Areas
                 </label>
             </h3>
         </div>
         <div style="position: relative; left: 260px;">
-            <h3> 请选择排名的时间段： </h3>
+            <h3> Select range of years： </h3>
             <input type="hidden" id="year-slider" value="2010,2018" />
             <script>
             $(document).ready(function() {
@@ -60,7 +67,7 @@
                         v = v.split(',');
                         begin_year_linechart = parseInt(v[0]);
                         end_year_linechart = parseInt(v[1]);
-                        read_data(area_linechart, begin_year_linechart, end_year_linechart);
+                        read_data(area_linechart, begin_year_linechart, end_year_linechart, num_top_k);
                     }
                 });
             });
@@ -76,12 +83,6 @@
     <!-- 领域组成：sunburst图 -->
     <div class="svgContainer" id="sunburstdiv">
     </div>
-    <script>
-        // global layout variables
-        var linechart_w = 900 + 75, linechart_h = 75,
-            barchart_w = 800, barchart_h = 500,
-            sunburst_w = 800, sunburst_h = 400;
-    </script>
     <script src="js/vis2_barchart.js"></script>
     <script src="js/vis1_linechart.js"></script>
     <script src="js/vis3_sunburst.js"></script>

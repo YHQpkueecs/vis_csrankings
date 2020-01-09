@@ -207,6 +207,27 @@ let abstract_sample = [' In many real world applications we have access to multi
             .attr("fill", function(d) {
                 return tag2color[d.tag];
             });
+
+        // rects description
+        let rect_desc = svg.selectAll(".RectDesc")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("class", "RectDesc")
+            .attr("x", function(d, i) {
+                return x(i);
+            })
+            .attr("y", function(d) {
+                return y(d.n_cite);
+            })
+            .attr("dy", -3)
+            .text(function(d) {
+                w = d.title.split(" ");
+                if (w[0].length >= 4)
+                    return w[0] + "..";
+                return w[0] + " " + w[1] + "..";
+            });
+
         // tip
         {
             let rect_tip = d3.tip()

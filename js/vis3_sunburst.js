@@ -142,7 +142,16 @@ function sunburst_draw(university, start_year, end_year) {
         .attr("text-anchor", "middle")
         .attr("font-weight", "bold")
         .attr("font-size", 18)
-        .text(university+': From '+start_year+' to '+end_year);
+        .text(university);
+    chart.append("text")
+        .attr("x", width / 2 + width)
+        .attr("y", 50)
+        .attr("dy", 30)
+        .attr("text-anchor", "middle")
+        .attr("font-weight", "bold")
+        .attr("font-size", 18)
+        .text('From '+start_year+' to '+end_year);
+
     // legend
     {
         let domains = ['AI', 'Systems', 'Theory', 'Interdisciplinary Areas', 'Others', 'Unrecognized'];
@@ -150,7 +159,7 @@ function sunburst_draw(university, start_year, end_year) {
         let legend_width = 50,
             legend_height = 25,
             legend_x = width + width / 4,
-            legend_y = 100,
+            legend_y = 120,
             legend_padding = 5;
         let legend_rects = chart.selectAll(".myLegendRect")
             .data(domains)
