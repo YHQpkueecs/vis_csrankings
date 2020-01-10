@@ -214,7 +214,7 @@ var begin_year_linechart = 2010,
                     //console.log("data_temp is", data_temp)
                     //console.log("data is", data)
                     data.push(data_temp);
-                    main_draw(data, top_k_prof[k]);
+                    main_draw(data, top_k_prof[k], k+1);
                 }
             });
     }
@@ -234,12 +234,12 @@ var begin_year_linechart = 2010,
 {
     // data: publications every year;
     // prof: professor info
-    function main_draw(data, prof) {
+    function main_draw(data, prof, rank) {
 
         let line_color = '#02f78e',
             dot_color = '#272727';
 
-        let margin = { top: 10, right: 300 + 80, bottom: 20, left: 40 },
+        let margin = { top: 10, right: 300 + 80, bottom: 20, left: 60 },
             width = linechart_w - margin.left - margin.right,
             height = linechart_h - margin.top - margin.bottom;
 
@@ -353,7 +353,7 @@ var begin_year_linechart = 2010,
             .append("text")
             .attr("class", "axis-label")
             .attr("transform", "rotate(-90)")
-            .attr("y", -margin.left + 15)
+            .attr("y", -25)
             .attr("x", -height / 2)
             .text('Pubs');
 
@@ -482,9 +482,9 @@ var begin_year_linechart = 2010,
         div.on("click", function() {
             d3.select("#linechartdiv")
                 .selectAll(".lineChartInnerDiv")
-                .attr("style", "background: white;");
+                .attr("style", "background: white fixed;");
             d3.select(this)
-                .attr("style", "background: yellow;");
+                .attr("style", "background: yellow fixed;");
 
             on_update_barchart(prof);
             on_update_sunburst(prof.dept, Math.max(begin_year_linechart, 1990), Math.max(end_year_linechart, 1995));
@@ -495,6 +495,17 @@ var begin_year_linechart = 2010,
             on_update_sunburst(prof.dept, begin_year_linechart, end_year_linechart);
         });
         */
+
+        // rank值
+        svg.append("text")
+            .attr("x", -margin.left)
+            .attr("y", 0)
+            .attr("dx", 5)
+            .attr("dy",5)
+            .attr("text-anchor", "start")
+            .attr("font-size", 18)
+            .attr("font-weight", "bold")
+            .text(String(rank));
 
     }
 }
