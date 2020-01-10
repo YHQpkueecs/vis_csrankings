@@ -307,7 +307,7 @@ let abstract_sample = [' In many real world applications we have access to multi
                 dv.html("<font size=2.5><p><b>Title: </b>" + d.title + "</p>" +
                     "<p><b>Area: </b>" + d.tag + ", " + d.label + "</p>" +
                     "<p><b>Citations: </b>" + d.n_cite + "</p>" +
-                    "<p style='display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; overflow:hidden;'><b>Abstract:</b> " +
+                    "<p style='display:-webkit-box; -webkit-line-clamp:5; -webkit-box-orient:vertical; overflow:hidden;'><b>Abstract:</b> " +
                     abst + "</p></font>"); //最多显示6行
             });
         }
